@@ -1,0 +1,100 @@
+---
+title: "Arvutigraafika"
+author: 'peacecop kalmer:'
+date: "2/9/2022"
+output:
+  bookdown::html_document2:
+    toc: TRUE
+    toc_float: TRUE
+---
+
+# Arvutigraafika olemus ja vajadus
+
+## Arvutigraafika tutvustus
+
+## Graafiliste andmete haldus arvutiga
+
+## Mälukasutus
+
+## Skaleeritavus, resolutsioon
+
+## Muudetavus tekstina
+
+## Logo
+
+## Värviteooria
+
+# Arvutigraafika liigid
+
+# Vektorgraafika
+
+## Vektorgraafika olemus
+
+## Vektorgraafikas tehtud faili seletamine ja kasutamine
+
+## Vektorgraafikas pildi loomine
+
+# Rastergraafika
+
+## Rastergraafika olemus
+
+## Pilditöötlus rastergraafikas
+
+### Värvide muutmine
+
+### Kollaaži tegemine
+
+### Katkise pildi "tervendamine"
+
+# Ülesanded
+
+## Vektorgraafika
+
+### Valmis pildi imiteerimine
+
+## Rastergraafika
+
+### Pilt piksliteks
+
+### Tekst pildiks
+
+### Katkise pildi "tervendamine"
+
+### Kollaaži tegemine, ka nii et sama objekt mitmekordselt
+
+## Küljendus
+
+### Valmis PDF'i või pildi järgi küljenduse tegemine
+
+### Etiketi tegemine
+
+### Postri tegemine
+
+### Voldiku tegemine
+
+## Nii raster- kui vektorgraafika
+
+### Varju tegemine inimese kujust nii *Inkscape*'s kui *Gimp*'s
+
+# Õpiväljundid
+
+Õpilane saavutab kursuse lõpuks eeldatavalt järgmised õpiväljundid:
+
+1. Tunneb arvutigraafika liike ja oskab neid selgitada.
+
+2. Oskab luua ja kasutada vektorgraafikat.
+
+3. Oskab töödelda rastergraafikat vähemalt kolmel viisil.
+
+4. On valmistanud näidispostri, mille jaoks on kasutanud nii vektor- kui rastergraafikat.
+
+# Sobilik tarkvara
+
+1. eelkõige rastergraafika jaoks: [GNU IMAGE MANIPULATION PROGRAM](https://www.gimp.org/)
+
+2. trükkimiseks ja digiteoste kujunduste loomiseks: [Scribus](https://www.scribus.net/)
+
+3. eelkõige vektorgraafika jaoks: [Inkscape](https://inkscape.org/)
+
+4. eelkõige maalimiseks: [Krita](https://krita.org/en/)
+

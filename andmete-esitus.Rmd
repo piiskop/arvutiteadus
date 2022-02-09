@@ -1,0 +1,41 @@
+---
+title: "Andmete esitus"
+author: 'peacecop kalmer:'
+date: "2/9/2022"
+output:
+  bookdown::html_document2:
+    toc: TRUE
+    toc_float: TRUE
+---
+
+# Milline on arvuti mälu?
+
+# Mälupesa kui kast lihtandme jaoks
+
+# Mälu aadress
+
+# Failisüsteemid
+
+# Ühikud
+
+# Tõeväärtused
+
+# Arvud
+
+# Sümbolid
+
+# Arvusüsteemid
+
+# Aeg
+
+# Geograafilised koordinaadid
+
+# Värv
+
+# Kompleksandmetüübid
+
+## stack
+
+## list
+
+## heap
