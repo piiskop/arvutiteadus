@@ -8,6 +8,30 @@ output:
     toc_float: TRUE
 ---
 
+# Sobilik tarkvara
+
+Alustuseks on mõistlik oma arvutisse paigaldada sobilik tarkvara. Pole midagi hullu, kui sulle meeldib *Photoshop* või *Illustrator* või *Indesign* või *Lightroom*, sest siis su koht ei olegi siin, vaid ilmselgelt sa juba tead, mida ja oskad nendega teha. Mina eelistan tasuta avatud lähtekoodiga vabavara (FOSS), sest see on kõige kättesaadavam, selle vigu ja puudujääke saab raporteerida ning kes tahab ja oskab, saab ise vigu kõrvaldada ja funktsionaalsust täiendada. FOSS on väga ilmekas näide jagamisühiskonnast ja eeskujuks meie reaalsusele. Samuti soovitan opsüsteemina kasutada FOSS'i, nt *Ubuntu*t, mida saab piisava vaba salvestusruumi olemasolul ka *Windows*i kõrvale paigaldada. Olen alates aastast 2007 ise *Ubuntu*t kasutanud ja oskan sellel platvormil kõige paremini juhendada.
+
+Arvutigraafika loomiseks ja töötlemiseks on mitmeid vabavaralisi programme. Siinkohal käsitleme neist nelja. Valik on selline seetõttu, et mina olen neid nelja kasutanud ja isegi kasutan aktiivselt edasi, mistõttu tean, millest kirjutan ja räägin. Rastergraafika töötlemiseks soovitan paigaldada tarkvara nimega [GNU IMAGE MANIPULATION PROGRAM](https://www.gimp.org/) (GIMP). Kui sa sellega pole varem midagi teinud, siis praegu on veel vara küsida, mida sellega teha. Me teeme alul sama asja kõikide nende neljaga, et tekiks arusaam, et mingeid asju saab nende kõikidega teha, mingeid asju mitte ja et sama või sarnase toimingu jaoks on nupud ja menüüelemendid ehk eri kohas, vaja need vaid loogiliselt üles leida. Lühidalt, kui sa oled nt nutitelefoniga fotosid teinud, siis GIMP's saad nt nende fotode värve muuta või midagi välja lõigata ja teise kohta panna. Kui aga läheb korporatiivgraafika tegemiseks, vaja nt logo kujundada, siis selleks võiks olla paigaldatud tarkvara nimega  Tarkvaraga nimega [Inkscape](https://inkscape.org/). Kui tekib tahe maalida arvuti abil, soovitan paigaldada tarkvara nimega [Krita](https://krita.org/en/). Kõikide eelnevate tarkvaradega toodetud tulemuste kokkupanemiseks sobib [Scribus](https://www.scribus.net/), mille soovitan paigaldada vähemalt teisendina *1.5*. *Scribus*ega saab küljendada ja kujundada raamatuid, voldikuid, plakateid, nimekaarte, ajalehti jms.
+
+# Sobilik riistvara
+
+Juba [tarkvara](#sobilik-tarkvara) alapeatükis mainisin veidi sobilikke riistvara parameetreid. Lisan siia ühe olulise asjanduse, millega on palju mugavam joonistada kui kiviga ehk arvutihiirega - graafikatahvli. Mina kasutan XP-PEN'i [Deco 01](https://www.xp-pen.com/product/84.html), mille suurus on piisav, et lauale ära mahuks ja ei erine oluliselt ekraani suurusest. Selle pliiats ei vaja eraldi akut ja tahvel on põhiarvutiga ühendatud kaabliga, millega on tagatud, et keset joonistamist ühendus ei katkeks. Klienditugi on neil ka asjalik. Selle uuem ehk teine versioon maksab täna ehk 20220210 otse tootja kodulehelt ostes [59.49 * eurot](https://www.storexppen.eu/), aga see pakkumine kehtib vist veel ainult veidi üle viie tunni, misjärel on selle hind 69.99 * eurot. Nad ei küsi isegi saatekulu hüvitamiseks tasu. Soovitan selline seadeldis soetada, kui seda veel pole, sest sellega saab palju täpsemalt asju ajada kui hiirega, sest pliiatsit liigutades kasutad sa väikeseid sõrmelihaseid, mitte suurt küünarvarre lihast.
+
+Lisaks soovitan tähelepanu pöörata kuvari ekraanile. Läikeekraan on suurepärane valik üksnes siis, kui sa kasutad seda ideaalsetes valgustingimustes, sest see peegeldab ohtralt valgust ja raskendab ekraanil oleva nägemist võimaldades siiski erksamaid värvitoone kui mattekraan, mida sa saad kasutada mis tahes valgustingimustes. Kui läikeekraan on puutetundlik, siis näpujäljed jäävad sellele palju lihtsamini kui mattekraanile.
+
+# Mille poolest erinevad vektor- ja rastergraafika?
+
+Matemaatikast on nii mõnelegi inimesele tuttav vektori mõiste. Vektor on nagu lõik, aga suunaga. Vektorgraafika ei sisalda vektoreid. Mina nimetaksin seda pigem geomeetriliseks graafikaks, sest see koosneb geomeetrilistest elementidest nagu lõigud, ristkülikud, ellipsid jms. Teatavasti ei ole matemaatilisel vektoril asukohta. Geomeetrilises graafikas on asukoht väga oluline. Iga geomeetrilise graafika sihitis on mingi asukohaga, sellele on mingi suurus, nt joonel jämedus ja pikkus, samuti värv ja läbipaistvus. Iga selline sihitis on seega kirjeldatav tekstiliselt.
+
+Rasterpilt koosneb pikslitest, mis on kõige väiksemad jagamatud pildi osad. Pikslil on ainult üks värvus, millele võib olla lisatud üks läbipaistvus.
+
+Kui teha geomeetrilises graafikas ringjoon, siis kirjeldatakse selle omadusi ja mitte selle ümbrust. Kui muid objekte joonisel pole, on ümbrus tühi ja tühjus geomeetrilises graafikas ruumi ei võta. Rastergraafilisel pildil kirjeldatakse ka *tühje* piksleid. See väide vajab muidugi kontrollimist ja seda saad sa väga lihtsalt teha. Seega küsimus: kumma jaoks on vaja rohkem salvestusruumi, kas geomeetrilise või rastergraafilise pildi jaoks?
+
+Kuna geomeetriline pilt on matemaatiliselt ja tekstiliselt kirjeldatav, saab igat selle osa skaleerida ehk selle suurust muuta mitte ainult väiksemaks, vaid ka suuremaks, ilma et kvaliteedis tehtaks järeleandmisi. Rasterpilti originaalist suuremaks tehes on see selgelt vaadeldav ainult kaugelt, sest lähedalt paistavad sakilised ääred, mis muudavad pildi *uduseks*.
+
+Kas inimese silm näeb geomeetrilist või rastermaailma? Silm ei erista nähtavaid sihitisi, vaid neelab ainult eri lainepikkusega elektromagnetlaineid, mistõttu on tegemist rasterpildiga.
+
 # Arvutigraafika olemus ja vajadus
 
 ## Arvutigraafika tutvustus
@@ -54,13 +78,13 @@ output:
 
 ## Rastergraafika
 
-### Pilt piksliteks
+### Pilt piksliteks paberil
 
 ### Tekst pildiks
 
 ### Katkise pildi "tervendamine"
 
-### Kollaaži tegemine, ka nii et sama objekt mitmekordselt
+### Kollaaži tegemine, ka nii et sama objekt mitmekordselt - *tlü* kataloogis
 
 ## Küljendus
 
@@ -87,14 +111,3 @@ output:
 3. Oskab töödelda rastergraafikat vähemalt kolmel viisil.
 
 4. On valmistanud näidispostri, mille jaoks on kasutanud nii vektor- kui rastergraafikat.
-
-# Sobilik tarkvara
-
-1. eelkõige rastergraafika jaoks: [GNU IMAGE MANIPULATION PROGRAM](https://www.gimp.org/)
-
-2. trükkimiseks ja digiteoste kujunduste loomiseks: [Scribus](https://www.scribus.net/)
-
-3. eelkõige vektorgraafika jaoks: [Inkscape](https://inkscape.org/)
-
-4. eelkõige maalimiseks: [Krita](https://krita.org/en/)
-
