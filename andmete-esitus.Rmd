@@ -8,6 +8,165 @@ output:
     toc_float: TRUE
 ---
 
+# Andmed arvutis
+
+Kas arvuti tõlgendab andmeid samamoodi nagu inimene? Kui just tegemist ei ole inimarvutiga, siis on arvuti jaoks kõik andmed lihtsalt sisend, olek või väljund. Tähenduse andmetele annab inimene. Kui inimene eristab numbreid, sümboleid, loogikaväärtusi, pilte, helindeid, siis kuidas arvuti neid eristab? Kuidas arvuti üldse talletab andmeid? Kuniks kvantarvutid pole masstarbimisse jõudnud, kasutame selliseid arvuteid, mille süsteemid tuginevad kahendsüsteemil. Inimesena oleme pigem tuttavad kümnendsüsteemiga. Ometi on arvutisüsteemides palju lihtsam kasutada kahendsüsteemi, milles on iga mälukoha jaoks vaid kaks võimalikku erinevat väärtust. Sõltuvalt andmekandjast võib see tähendada, et elektrilaeng on või laengut pole, magnetjupike on pigem ühtpidi kui teistpidi, konarus või nõgu - alati kaks vastandlikku võimalikku väärtust. Kõik numbrid, sümbolid, loogikaväärtused, pildid ja helindid on arvuti jaoks sellisel kujul. Et paremini mõista, kui palju on vaja mälu millegi hoidmiseks, on kasulik tunda kahendsüsteemi, samuti teisi numbrisüsteeme, sest vahel kasutatakse arvutisüsteemides ka kaheksand- või 16-ndsüsteemi.
+
+# Arvusüsteemid
+
+## Mis ja milleks on erinevad arvusüsteemid?
+
+The most widely used number system in the world is the decimal number system. What does it mean? We use ten digits from 0 - 9 and combine them to get numbers. For human beings, it is easier to calculate in decimal because once we multiply something by ten, we shift the decimal point to the right and once we divide something by ten, we just move the decimal point to the left.
+
+For computers, there are other number systems like binary, octal and hexadecimal. Every decision is in its simplicity a binary decision: if there are options, there are always at least two options and if there are more than two options, we always compare first two options with each other, then the chosen option with the next and so on. It is like a road or tree having branches. As computers use electricity, every command can be interpreted using the electrical power and charge. The charge can either exist or not, there are no other options like a woman either is pregnant or is not pregnant - nobody can be a bit pregnant. The world of computers is black and white without greyscale basically. Those black and white or charged and not charged are like basic building blocks that can be used for building anything. we can combine those on-off-branches and get complicated systems. we can create greyscale using black and white. we can create other color scales by expanding the palette.
+
+In binary, the only digits available are 0 and 1. we can imagine a big number consisting only of naughts and ones - it is not easy to memorize. Therefore, other number systems exist based on binary: quaternary, octal, hexadecimal... powers of two. For writing a number in hexadecimal, we need less digit positions than in binary and therefore, hexadecimal is heavily used in computer technologies. Of course, there has to be a bridge to translate numbers in hexadecimal into binary for the basic level of the computer processor.
+
+In general, there can be number systems on any base. For instance a ternary system consists of three different digits: 0, 1 and 2. There are four distinct digits in quaternary system: 0, 1, 2 and 3. And if we want to write a number in the system based on 17, we have 17 distinct digits in use to combine. If we had a base 1 number system then there would be available only one distinct digit. If that digit is 0 then combining 0-s with each other would always result 0. If that digit is any other digit then we could just grow a number in digits, for instance using 1-s: 111111... But we could never interpret 0. And a base 0 number system doesn't exist because if it existed there would be no digits available.
+
+i've narrated about base-17 number system. Which distinct digits are available in such a system if we only know numbers from 0 - 9 in our commonly used decimal system? Actually, it is just a convention which symbols we use in the notation. For instance in the base-11 system or undecimal, there are symbols 0 - 9 and a. Here "un" doesn't make the decimal upside down or something like that, it's the prefix for 1. In base-12 numeric system, there are 12 distinct digits available - as i may guess already, 0 - 9 and letters a and b. But we can also use an upside down 2 for 10 and upside down 3 for 11. Up to base-36 or hexatrigesimal number system, we can use digits 0 - 9 and a - z which means all the letters from the English alphabet which has 26 letters. What happens if we want to use a larger base than 36? Then we have to know the specifics. Up to 36 digits, we didn't have to distinguish between the upper- and lowercase letters. Starting from base-37 it is necessary to distinguish between them. we also need to know the order of the letters: which come first, lower- or uppercase letters. For instance, in the base-52 or duopentagesimal, all the uppercase letters come before the lowercase versions and all the vowels are excluded. In the base-56 alphabet, there are 0 and 1 missing and also some letters are missing that can cause a confusion because of similarities to the other case like uppercase I is exluded because it is too similar for the lowercase l and therefore, also the lowercase l is excluded. For tetrasexagesimal, all the digits A - Z, a - z and 0 - 9 r in use in this order and the last two digits are + and /. As i may have noticed, for a larger base, some other symbols than numbers and letters are in use.
+
+If we write numbers in different number systems interchangeably then we have to use a small base number after each number for differentiating it from numbers in other number systems. For instance number 0 in binary is written 0~2~ and the same number in hexadecimal is 0~16~. As the decimal system is most widely used, for numbers in decimal, we don't have to write the base.
+
+Why are there so many different number systems available and what is the limit? There's no limit. After using all the symbols of all the languages in the world, we can still create new symbols. But does it make sense? This is the question. Binary is useful for computer processing or other situations where they choose between two options. Powers of two systems are possibilities to write numbers in binary shorter. For instance, in tetrasexadecimal, we can tell stories to computer up to six times shorter than using binary because 64 is the sixth power of 2. Decimal is easy for human beings because of having ten fingers that can be used for calculations. Duodecimal can be used for counting months. Tetravigesimal is in use for counting hours in a day. Sexagesimal is used in the trigonometry and for counting seconds and minutes. Languages are constructed based on certain rules. In some primitive languages, repeating the same syllable different number of times has a different meaning. Try the syllable *pe* four, five and 16 times! If a Somali guy wants to download a movie and that movie isn't available for download, he could see a message *la la la la la la la la la la* which means *is unavailable to be downloaded*. For them, it's easier to remember similar syllables. They can't think abstractively. The latter was true in the year 2017. Nowadays, it doesn't seem to be true anymore. Also some birds and animals have languages like this and they also use different pitches and combinations.
+
+If the story has still some gaps for me, maybe, i want to read an article about [number systems and bases](https://betterexplained.com/articles/numbers-and-bases/).
+
+## Ühendsüsteem
+
+Kõige lihtsam arvusüsteem on ühendsüsteem. Nagu selle nimetuseski mainitud, on tegemist vaid ühe võimaliku väärtusega positsiooni kohta. Ühendsüsteemis kasutavad nt lapsed loendamiseks oma sõrmi. Filmidest oleme näinud, et kui keegi on pikaks ajaks vangistatud, siis ta tõmbab seinale kriipse, et loendada päevi. Võrdlen tabelis \@ref(tab:base-10-base-1) kümnendsüsteemi arve ühendsüsteemi arvudega.
+
+| Baas 10 | Baas 1 |
+|---------|--------|
+| 1       | 1      |
+| 2       | 11     |
+| 3       | 111    |
+| 4       | 1111   |
+
+: (\#tab:base-10-base-1) Kümnendsüsteemi ja ühendsüsteemi arvud
+
+Näeme, et mida suurem arv, seda rohkem positsioone on vaja arvu väljendamiseks. 32 õuna väljendamiseks oleks vaja 32 pulka ja ei piisaks isegi kõikidest ühe inimese sõrmedest. Seetõttu on ühendsüsteemi kasutamine ebatõhus.
+
+## Kahendsüsteem
+
+number of digits: 2
+
+digits: 0, 1
+
+examples: 0~2~, 1~2~, 10~2~
+
+|   First bit    |
+|:--------------:|
+|       0        |
+|       1        |
+| 2 combinations |
+
+: One binary digit or a bit (b) can have a value 0 or 1
+
+| Second bit | First bit |
+|:----------:|:---------:|
+|     0      |     0     |
+|     0      |     1     |
+|     1      |     0     |
+|     1      |     1     |
+
+: (\#tab:base-2)For representing a larger number, more bits on the left are needed. 0 and 1 can still be displayed using two bits while the second bit having 0-s. Once the first bit is full the second bit starts with 1 and the first bit starts over
+
+Taken from the table \@ref(tab:base-2) there are four combinations altogether possible using two bits.
+
+| Third bit | Second bit | First bit |
+|:---------:|:----------:|:---------:|
+|     0     |     0      |     0     |
+|     0     |     0      |     1     |
+|     0     |     1      |     0     |
+|     0     |     1      |     1     |
+|     1     |     0      |     0     |
+|     1     |     0      |     1     |
+|     1     |     1      |     0     |
+|     1     |     1      |     1     |
+
+: (\#tab:base-2-bits-3)All the possible numbers using three bits. Once all the possible numbers using two bits are used the third bit starts with 1 and the second and first bit start over
+
+As i see in the table \@ref(tab:base-2-bits-3), eight combinations of naughts and ones are possible for representing numbers naught to seven.
+
+| Third bit | Second bit | First bit |
+|:---------:|:----------:|:---------:|
+|     2^2^  |     2^2^   |     2^2^  |
+|     4     |     2      |     1     |
+
+: Bits with powers of two
+
+possible uses: computational processing and actually everywhere
+
+Kahendsüsteem on arvutite maailmas kõige enam levinud. Kahendsüsteemis on kasutuses kaks erinevat võimalikku väärtust positsiooni kohta. Võrdlen tabelis \@ref(tab:bases-10-1-2) kümnend-, ühend- ja kahendsüsteemi arve.
+
+| Baas 10 | Baas 1 | Baas 2 |
+|--------:|-------:|-------:|
+|       0 |        |      0 |
+|       1 |      1 |      1 |
+|       2 |     11 |     10 |
+|       3 |    111 |     11 |
+|       4 |   1111 |    100 |
+
+: (\#tab:bases-10-1-2)Kümnend-, ühend- ja kahendsüsteemi arvud
+
+Kui ühendsüsteemi puhul oli lihtne aru saada, et iga järjest suurema täisarvu esitamiseks paneme ühe pulga juurde, siis kahendsüsteemis enam nii lihtne ei ole. Kui erinevate numbritena on meil kasutuses 0 ja 1, siis nendest kahest tuleb meil kombineerida kõikvõimalikud vajalikud arvud. Näeme, et 0 ja 1 on nii kümnend- kui kahendsüsteemis samad. Millise nipiga on kümnendsüsteemi 2 ehk 2~10~ kahendsüsteemis 10 ehk 10~2~? Samasuguse nipiga nagu peale 9-t on kümnendsüsteemis 10. Nulli ja ühe jaoks saame kahendsüsteemis kasutada ainult üht positsiooni ehk ühelisi. Milline number järgneb ühele? Kuna üks on maksimaalne number kahendsüsteemis, siis oleme üheni jõudes kõik võimalikud erinevad sümbolid ära kasutanud ja tuleb alustada otsast peale ehk kirjutada üheliste kohale 0. Ja igas sellises olukorras, milles jõuame numbrite loendamisega positsiooni kohta lõppu tuleb suurendada järgmise positsiooni ehk antud juhel kaheliste positsiooni numbrit. Kaheliste positsioonis oli siiani null, mida ma ei kirjutanud. Nüüd suurendan selle üheks ja saangi arvuks 10~2~. 3~10~ jaoks suurendan taas üheliste positsiooni ja liidan nullile ühe saades üheliste positsioonile ühe. Kaheliste positsiooni number jääb samaks ja kokku kujuneb arvuks 11~2~. 4~10~ saamiseks tahan suurendada üheliste positsioonil oleva numbri väärtust, aga ei saa, sest üks on maksimaalne väärtus. Seega hakkan jälle otsast peale ja kirjutan ühe asemele nulli. See tähendab, et nüüd on vaja ka kaheliste positsiooni väärtust suurendada. Kuna ka seal on 1, siis kirjutan sellegi asemele 0-i, mis tähendab, et nüüd ei saa muudmoodi, kui et tuleb juba neljaliste positsioon kasutusse võtta ja sinna 1 kirjutada. Jah, kolmas positsioon paremalt on neljaliste positsioon. Miks? Sest kui kümnendsüsteemis on iga positsiooni suurusjärk võrreldes eelmisega kümme korda suurem ehk 1 ... 10 ... 100 ehk ühelised ... kümnelised ... sajalised, siis kahendsüsteemis on iga positsiooni suurusjärk võrreldes eelmisega kaks korda suurem ehk 1 ... 2 ... 4 ehk ühelised ... kahelised ... neljalised.
+
+Kahendsüsteemis on ka positsioonile eriline nimetus antud - bitt, mis tähendab inglise keeles *binary digit* ehk *kahe võimaliku erineva väärtusega number*. Arvutite maailmas on bitt kõige väiksem infoühik. Bitti jagada ei saa.
+
+For independent reading:
+
+- [Base 2 Calculator](https://www.csfieldguide.org.nz/en/interactives/base-calculator/)
+
+- [Binary Cards](https://www.csfieldguide.org.nz/en/interactives/binary-cards/)
+
+## Kolmendsüsteem
+
+Kolmendsüsteemis on kasutuses kolm võimalikku erinevat numbrit, nt 0, 1 ja 2. Võrdlen tabelis \@ref(tab:bases-10-2-3)eri baaside arve.
+
+| Baas 10 | Baas 2 | Baas 3 |
+|--------:|-------:|-------:|
+|       0 |      0 |      0 |
+|       1 |      1 |      1 |
+|       2 |     10 |      2 |
+|       3 |     11 |     10 |
+|       4 |    100 |     11 |
+|       5 |    101 |     12 |
+|       6 |    110 |     20 |
+|       7 |    111 |     21 |
+|       8 |   1000 |     22 |
+|       9 |   1001 |    100 |
+
+: (\#tab:bases-10-2-3)Kümnend-, kahend- ja kolmendsüsteemi arvud
+
+Kolmendsüsteemis saame kenasti loendada nullist kaheni ja siis on meil kasutada olevad erinevad sümbolid otsas ning tuleb uus ehk kolmeliste positsioon kasutusse võtta ja selle väärtus nullist üheks suurendada. Kahe positsiooniga saame kolmendsüsteemis loendada kuni 8~10~'ni, misjärel on vajalik juba üheksaliste positsioon kaasata.
+
+## Kaheksandsüsteem
+
+Kaheksandsüsteemi ehk oktaalsüsteemi kasutatakse ka arvutite maailmas, sest kuna kaheksa on kahe aste, siis on kaheksandsüsteemis võimalik inimeste jaoks arve loetavamaks ja lühemaks teha, kuigi arvuti jaoks jäävad need endiselt kahendsüsteemi arvudeks.
+
+| Baas 10 | Baas 2 | Baas 3 | Baas 8 |
+|--------:|-------:|-------:|-------:|
+|       0 |      0 |      0 |      0 |
+|       1 |      1 |      1 |      1 |
+|       2 |     10 |      2 |      2 |
+|       3 |     11 |     10 |      3 |
+|       4 |    100 |     11 |      4 |
+|       5 |    101 |     12 |      5 |
+|       6 |    110 |     20 |      6 |
+|       7 |    111 |     21 |      7 |
+|       8 |   1000 |     22 |     10 |
+|       9 |   1001 |    100 |     11 |
+|      10 |   1010 |    101 |     12 |
+|      11 |   1011 |    102 |     13 |
+|      12 |   1100 |    110 |     14 |
+|      13 |   1101 |    111 |     15 |
+|      14 |   1110 |    112 |     16 |
+
+: (\#tab:bases-10-2-3-8)Kümnend-, kahend-, kolmend ja kaheksandsüsteemi arvud
+
+Tabelist \@ref(tab:bases-10-2-3-8) johtub, et kaheksandsüsteemis on nt arvu 14~10~ kujutamiseks vaja ainult kaht positsiooni, samal ajal kui kahendsüsteemis on vaja nelja bitti. Siiski tasub mõista, et isegi kui inimese jaoks on ainult kaks positsiooni kaheksandsüsteemis kasutuses, siis arvuti mälukasutuse suhtes tuleb ikkagi lähtuda kahendsüsteemi bittide arvust. Lihtsalt 16~8~ on inimesele lihtsam meeles pidada kui 1110~2~.
+
 # Milline on arvuti mälu?
 
 # Mälupesa kui kast lihtandme jaoks
