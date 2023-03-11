@@ -1,0 +1,294 @@
+# *Ubuntu*[]{#ubuntu}
+
+## Õppeplaan
+
+Teemad:
+
+1. *Ubuntu Server*'i paigaldamine virtuaalmasinasse.
+
+2. Seniõpitu kordamine.
+
+3. Failiõigused.
+
+4. Failisüsteemid.
+
+5. Otsing.
+
+6. Tekstifailide töötlemine.
+
+7. Failiväljund.
+
+8. Tuum.
+
+9. Käivitamine.
+
+10. Süsteemikomponendid.
+
+11. Seadmed.
+
+12. Võrgundus.
+
+13. Turvalisus.
+
+14. Skriptimine.
+
+15. Automatiseerimine.
+
+Iga teema puhul käsitleme jupikaupa teooriat ja kohe praktikat otsa, et seda teooriat kontrollida. Lisaks toimub õpitu kinnistamiseks hulganisti harjutusi, millest esimesed on väikese variatsiooniga ja viimased suure variatsiooniga, mille seas võib olla ka eelnevate teemade osi.
+
+Kui arvestada kolm pooleteise tunnist sessiooni nädalas, pluss iseseisev harjutamine, siis minimaalselt kulub iga teema peale keskmiselt kaks nädalat. Täpsemalt kestust ennustada ei saa, kuna sõltub, kui põhjalikult käsitleme ja kui hoomatavad teemad on.
+
+## Rakenduse avamine *Ubuntu*s
+
+"Rakendus" on teise sõnaga "programm". Programme on mitmeid. Sündmusel võib olla oma programm, mida nimetatakse ka kavaks. Nt kontserdikavas on esinemised kindlas järjekorras. Raadioprogramm tähendab raadiosaateid kindlas järjekorras ja kindlaksmääratud algusaja ja kestuse ja sisuga. Reisiprogramm tähendab eri kohtade külastamist teatud järjekorras ja teatud ajal. Arvutiprogramm tähendab kodeeritud juhiste jada, mille järgi masin toimetab.
+
+Arvutiprogrammi kirjutamise vajadus võib tuleneda sellest, et millegi tegemine ilma on liiga keeruline, tüütu, ohtlik, võimatu või varukulukas. Selline protsess automatiseeritakse arvuti abil. Kui inimene suudab korraga meeles pidada kuni seitset annet, siis arvuti suudab nii palju, kui sellel mälu on vastava programmi jaoks. Tüütu on mingi sama tegevuse järjepidev kordamine, nt sadadele pudelitele käsitsi siltide peale kleepimine. Sellise tegevuse saab ära teha sildirobot. Kui kuskil on plahvatusohtlik aine, siis inimesel on ohtlik selle läheduses toimetada, ent robotil pole sellest sooja ega külma. Liigselt radioaktiivses tsoonis peab inimkeha vastu väga lühikese aja, aga vastavalt varustatud masinal pole seal häda midagi. Ühe pildifaili toimetamiseks ühest linnast teise sõiduvahendiga kulub palju rohkem aega, kui seda saates arvutivõrgu kaudu.
+
+Arvutiprogramm veebilehtede vaatamiseks on nt "Firefox" või "Chrome", meilide haldamiseks "Thunderbird", failihalduseks "Nautilus", pilditöötluseks "Gimp", küljendamiseks "Scribus". Igal programmil on oma nimi, et saaksime neid üksteisest hõlpsasti eristada.
+
+"Ubuntu" on operatsioonisüsteem, mis võimaldab programmide kasutamist arvutis. Juba "Ubuntu" käivitumisel lastakse käima abiprogrammid. Programmide järgimist saame ise käivitada ja peatada. Sõltuvalt töölaua keskkonnast on see erinev. Järgnevalt vaatleme, kuidas avada rakendust töölaua keskkonnas, mida nimetatakse "GNOME 3"'ks.
+
+Pildil \@ref(fig:gui-dash-button) leheküljel `r render_pageref(reference = "fig:gui-dash-button")` on näha "GNOME 3" töölaua keskkond. Vasakul oleval ribal on hulganisti ikoone, millele klikkides saab avada n-ö lemmikrakendusi. Nende all on üheksa täpiga nupp. Kui liigutad osundikursori selle kohale, ilmub tekst "Rakenduste kuvamine" keeles, milles sinu "Ubuntu" koopia on. Vajuta sellele nupule!
+
+```{r label = "gui-dash-button", echo=FALSE, fig.cap = "*GNOME 3*: all vasakul nurgas on üheksa täpiga nupp, mille kaudu saab rakendusi avada."}
+include_external_graphics("rmd/rakenduste-kuvamine-72.jpg")
+
+```
+
+Üles äärde tekib luubi ikooniga otsinguväli (pilt \@ref(fig:gui-dash-search) leheküljel `r render_pageref(reference = "fig:gui-dash-search")`). Sinna saad kirjutada rakenduse nime, mida soovid avada. Selle all kuvatakse rakenduste loend, mille nimes sõne, mille oled otsinguväljale kirjutanud. Seejärel saad loendist valida vajaliku rakenduse ja selle ikoonile klikkida rakenduse avamiseks. Võid ka sõrmistikul kasutada nooleklahve valimiseks ning "Enter"-klahvi avamiseks. Vaikimisi avatakse kõige esimene rakendus loetelus.
+
+```{r label = "gui-dash-search", echo=FALSE, fig.cap = "Luubiga tähistatud otsingukasti kirjutama hakates filterdatakse rakenduste loetelu vastavalt nimes sisalduvale kirjutatud tekstiosale."}
+include_external_graphics("rmd/kasut.jpg")
+
+```
+
+## Kasutajakonto loomine *Ubuntu*s
+
+Igal kasutajal peaks olema enda konto, sest nagu me oleme inimestena kõik erinevad, soovime me ka erinevaid sätteid. Kui samu faile muudavad samas arvutis mitu kasutajat, siis on hea, kui nendest failidest on koopia iga kasutaja kaustas. Muidu läheb sassi.
+Kui sisselogimise vaates ei kuvata sinu kontot, siis selles arvutis sinu kontot polegi. Kui sa püüad ebaõnnestunult sisse logida ühte kontosse ja seejärel õnnestunult teise, siis "Ubuntu" ei näita sulle midagi peale lilla tausta ja hiirekursori. Siis aitab arvuti restart.
+Kasutajakontot saab luua nii graafilist kasutajaliidest (GUI) kasutades kui ka terminali emulaatori kaudu käsurealt.
+
+Kasutajakonto lisamise käsk on `adduser` (pilt \@ref(fig:adduser) leheküljel `r render_pageref(reference = "fig:adduser")`). Kuna kasutajakontosid saab hallata üksnes *sudo* grupis olev kasutaja, siis tuleb selle käsu ette kirjutada `sudo`. Sellele programmile tuleb kirjutada üks sisendparameeter, milleks on sinu kasutajanimi. Seejärel küsitakse salasõna, mida hakkad kasutama. Seda kirjutades sa ei näe, et miski ekraanile ilmub, kuna muidu võiks keegi teine näha sinu parooli. Sama parool tuleb kinnitada. Viimaks küsitakse sult rida andmeid, millele võib vastamata jätta. Need andmed tuleb `Y`-ga kinnitada.
+
+```{r label = "adduser", echo=FALSE, fig.cap = "Kasutajakonto loomine."}
+include_external_graphics("rmd/adduser.png")
+
+```
+
+## Kasutajakonto vahetamine *Ubuntu*s
+
+Kui oled sisse loginud ühte kasutajakontosse, aga tahad teise kontosse sisse logida, siis on võimalik seda teha kahel moel:
+
+1. sa saad praegusest kontost välja logida ja teise kontosse sisse logida.
+
+2. sa saad praeguse konto rakendused töösse jätta ja paralleelselt teise kontosse sisse logida.
+
+## Väljalogimine GUI'ga
+
+Paremal üleval on kolmnurk (pilt \@ref(fig:logout) leheküljel `r render_pageref(reference = "fig:logout")`). See on tegelikult nool. Vajuta sellele suvalise hiirenupuga!
+
+Avanenud menüüst otsi selle kasutaja nimi, mille kontos sa parajasti sees oled ja vajuta sellele nimele suvalise hiirenupuga!
+
+Vajuta *Logi välja* (see on tõlgitud tekst)!
+
+```{r label = "logout", echo=FALSE, fig.cap = "Väljalogimine graafilise liidese kaudu."}
+include_external_graphics("rmd/logout.png")
+
+```
+
+## Väljalogimine terminali emulaatoriga
+
+Käsk väljalogimiseks terminali emulaatoris on `gnome-session-quit` (pilt \@ref(fig:logout-terminal) leheküljel `r render_pageref(reference = "fig:logout-terminal")`).
+
+```{r label = "logout-terminal", echo=FALSE, fig.cap = "Väljalogimine tekstiliidese kaudu."}
+include_external_graphics("rmd/logout-terminal.png")
+
+```
+
+## Rakenduse paigaldamine *Ubuntu*s
+
+"Ubuntu"-s on vaikimisi küll olemas hulganisti kasulikke rakendusi, ent vahel sellest ei piisa. Nt ei ole standardselt paigaldatud graafikaprogrammi "Inkscape".
+
+"Ubuntu" tarkvara hoitakse vastavates varamutes. Need varamud asuvad tarkvara tüübi järgi eri aadressidel.
+
+Paigaldamiseks on ette nähtud käsk `apt`. Kuna tarkvara haldus tähendab muudatusi operatsioonisüsteemis, siis saab seda käsku kasutada üksnes, kui selle ette lisada `sudo`. `apt`-le järgneb alamkäsk `install`, mille järele saab kirjutada tühikuga eraldatult kõik need programmid, mille tahame paigaldada (pilt \@ref(fig:sudo-apt-install-inkscape) leheküljel `r render_pageref(reference = "fig:sudo-apt-install-inkscape")`).
+
+```{r label = "sudo-apt-install-inkscape", echo=FALSE, fig.cap = "*inkscape*'i paigaldamine *apt*iga."}
+include_external_graphics("rmd/sudo-apt-install-inkscape.png")
+
+```
+
+Selles näites püüan paigaldada programmi "inkscape".  Selgus, et minu süsteemis on see programm juba paigaldatud. Kui see pole paigaldatud, siis tuleb tavaliselt paigaldus kinnitada.
+
+apt-ga saame paigaldada ainult tarkvara, mis on heaks kiidetud "Debiani" või sellele põhinevate operatsioonisüsteemide nagu ka "Ubuntu" tegijate poolt.
+
+Mõni tarkvara ei jõua "Ubuntu" varamusse, sest see on liiga aeglane või katkine, ühesõnaga ebapiisav sellise varamu jaoks. Ilma kolmanda osapoole heakskiiduta saavad tarkvaraarendajad oma tehtud tarkvara toppida "snapi" varamusse. Sealt paigaldamiseks on vaja käsureal asendada "apt" käsuga `snap` (pilt \@ref(fig:sudo-snap-install-eclipse-classic) leheküljel `r render_pageref(reference = "fig:sudo-snap-install-eclipse-classic")`). "Eclipse"-i paigaldamiseks tuleb veel lõppu lisada `--classic`.
+
+```{r label = "sudo-snap-install-eclipse-classic", echo=FALSE, fig.cap = "*eclipse*'i paigaldamine *snap*iga."}
+include_external_graphics("rmd/sudo-snap-install-eclipse-classic.png")
+
+```
+
+```{=tex}
+\begin{landscape}
+
+```
+
+## Terminali emulaatoriga toimetamine
+
+Terminali emulaator (pilt \@ref(fig:terminal-emulator) leheküljel `r render_pageref(reference = "fig:terminal-emulator")`) avaneb klahvikombinatsiooniga "C + M + t", kusjuures "C" tähendab "control", "M" tähendab "meta" või "alt". Nii et hoiad esimest kaht klahvi all ning vajutad korraks kolmandale, misjärel lased kõik klahvid üles.
+
+Terminali emulaatori saad ka lahti, kui kasutad GUI'd.
+
+Mis on üldse terminal? Kunagi mitukümmend aastat tagasi ei olnud igaühel laual sülearvutit või lauaarvutit. Kamba inimeste jaoks oli üks hästi suur arvuti, mida kutsuti "mainframe". Inimesed said sellele käske anda terminali kaudu. Terminal oli riistvara, mis koosnes monitorist ja sõrmistikust. Umbes nagu siis, kui sa kasutaksid lauaarvutit, mille külge on ühendatud monitor ja klaviatuur.
+
+Terminali emulaator jäljendab füüsilist terminali tarkvaraliselt. Sellesse programmi saab kirjutada teksti. Sellel puudub GUI. Tekstkäskudega arvuti kasutamine nõuab vähem voolu, mälu ja protsessori jõudlust, sest pole vaja joonistada graafilisi komponente. Teisalt, kui käske ei tea, siis on GUI'ga lihtsam arvutit kasutada.
+
+Alloleval pildil on avatud terminali emulaator.
+
+```{r label = "terminal-emulator", echo=FALSE, fig.cap = "Terminali emulaator."}
+include_external_graphics("rmd/terminal-emulator.png")
+
+```
+
+Terminali emulaatoris toimetamist nimetatakse ka käsureal tegutsemiseks, sest saad kirjutada käsklusi. Kirjutada saad sinna, kus on valge ristkülik, mis on tekstikursor. Sellest vasakul on alates vasakust äärest teave selle kohta, millises rollis ja masinas sa tegutsed ning kooloni ja taala märgi vahel on täispikk teekond juurkataloogist käesoleva kataloogini. Tilde ehk "~" tähendab kodukataloogi ehk minu näites "/home/peacecop".
+
+Nüüd saadki kirjutada programmi nime ning vajadusel lisada parameetreid. Kui oled käsu valmis kirjutanud, kinnitad selle vajutades "Enter"-klahvile.
+
+Pildil \@ref(fig:pwd) leheküljel `r render_pageref(reference = "fig:pwd")` on terminali emulaatoris kirjutatud käsureale käsk `pwd`. See tähendab "print working directory".
+Mõne toimingu jaoks on vaja arvuti halduri õigusi. Kui sinu "Ubuntu" kasutajakontol on need õigused, siis piisab vaid sudo lisamisest käsu ette. Muul juhul tuleb sul terminali emulaatoris vahetada kasutajakonto sellise vastu, millel on halduri õigused, käsuga `su <kasutajanimi>`. "su" tähendab "switch user". Seejärel märkad, et "@"-märgi ees on käsureal "<kasutajanimi>". Pärast administratiivse toimingu sooritamist on mõttekas sama käsuga enda kasutajakontosse tagasi hüpata, et vältida kogemata tehtavaid vigu.
+
+Veel tihti vajaminevaid käske:
+
+`cd <teekond kataloogini>`
+: "change directory"
+
+`mkdir <kataloogide nimed, tühikud vahel>`
+: "make directory"
+
+Kui terminali emulaatoris kirjutad salasõna, siis sa ei näe, mida kirjutad, kuna muidu keegi, kes üle su õla juhtub vaatama, näeks, mida sa kirjutad.
+
+Oled unustanud oma salasõna? Logi "Ubuntu"-sse juurkasutaja õigustega kontosse ja vaheta salasõna käsuga:
+
+`gpasswd <kasutajanimi>`
+
+Vahel on vaja teada nt pildifaili kohta, millised on selle tihedus ja mõõtmed. Selleks on käsk
+
+`file <teekond failini>`
+
+Minu näites tahan ma teada kataloogis *~/eclipse-workspace/test2* asuva faili *children-computers.jpg* omadusi (pilt \@ref(fig:file) leheküljel `r render_pageref(reference = "fig:file")`). Näeme, et selle faili tihedus on $\numproduct{96 x 96}$ dpi ja mõõdud on $\numproduct{668 x 371}$ px.
+
+```{r label = "pwd", echo=FALSE, fig.cap = "Teekonna kuvamine kataloogini, kus parasjagu ollakse."}
+include_external_graphics("rmd/pwd.png")
+
+```
+
+```{r label = "file", echo=FALSE, fig.cap = "Faili metaandmete vaatamine."}
+include_external_graphics("rmd/file.png")
+
+```
+
+```{=tex}
+\end{landscape}
+
+```
+
+## Sõrmistik
+
+Kui sõrmistik on ühe keele jaoks ja sinu süsteemis on kasutuses teine keel, siis mõni märk, mida vajad, pole klahvidele joonistatud. Kuidas sa siis tead, millisele klahvile tuleks vajutada? Kirjuta terminali emulaatoris käsureale
+
+`gkbd-keyboard-display -l ee` (pilt \@ref(fig:keyboard) leheküljel `r render_pageref(reference = "fig:keyboard")`)
+
+Tähendus:
+
+`gkbd-keyboard-display`
+: rakendus, mis kuvab sõrmistiku klahvide paigutused
+
+`-l`
+: parameeter, millele peab järgnema piirkonna tähis
+
+`ee`
+: Eesti piirkonna tähis
+
+```{r label = "keyboard", echo=FALSE, fig.cap = "Sõrmistik."}
+include_external_graphics("rmd/keyboard.png")
+
+```
+
+sinu klaviatuur võib olla teistsugune. Mõnel sülearvutil pole nt eraldi numbriklaviatuuri.
+
+Vajuta nüüd mingile klahvile! Pane tähele, et see klahv, mille oled alla vajutanud, ei ole enam valge!
+
+Nt pildil \@ref(fig:alt-f) leheküljel `r render_pageref(reference = "fig:alt-f")` on vajutatud alla korraga kaks klahvi. Ülemine neist on klahv, millel on neli sümbolit.
+
+```{r label = "alt-f", echo=FALSE, fig.cap = "Kaks klahvi on korraga alla vajutatud."}
+include_external_graphics("rmd/alt-f.png")
+
+```
+
+See sümbol, mis on vasakul all, tekib siis, kui lihtsalt sellele klahvile vajutada. Nt f-tähe saab nii. Seega, märk, mis on vasakul all, ilmub, kui ainult sellele klahvile vajutada.
+
+Kui tahad *F*-tähte, siis vajuta alla *Shift*, hoia see all ja samal ajal vajuta *F*-klahvile, misjärel lase *F*-klahv lahti ja seejärel *Shift*-klahv! Märk, mis on vasakul ülal, ilmub, kui vajutada klahvi koos *Shift*-ga. Kui ma näitan kuskil klahvikombinatsiooni, siis ma ei taha *Shift*-i välja kirjutada, vaid kirjutan selle asemel *S*. Nt ülalmainitud klahvikombinatsioon on *S + f*.
+
+Näeme, et klahvil on veel kaks sümbolit, paremal.
+
+See, mis on paremal all, ilmub, kui kasutad klahvi koos parempoolse *alt*-klahviga (alternative).
+
+See, mis on paremal üleval, ilmub, kui hoiad all nii *Shift*- kui parempoolset *Alt*-klahvi ja vajutad sellele klahvile, kus on sümbol.
+
+*Alt*-klahvi nimetatakse ka *Meta*-klahviks, mistõttu klahvikombinatsioonide tähistustes tähistan ma seda *M*. Seega, et saada sümbol *ª*, tuleb kasutada kombinatsiooni *S + M + f*.
+
+Mõne toimingu jaoks kombineeritakse klahve *Control*-klahviga (ctrl). Nt paljudes rakendustes kuvatakse kombinatsiooni *Control + f* peale otsinguvõimalus (find). *Control*-i tähistan lühemalt *C*. Seega, viimane kombinatsioon on *C + f*.
+
+## Inglise keele sõrmistiku sättimine
+
+Typingtest.com toimib ainult ingliskeelse sõrmistikuga. Kui mu arvutis seda veel ei ole, siis avan *Regional & Language*'i kasutades *Dash*'i (pilt \@ref(fig:dash-region-language) leheküljel `r render_pageref(reference = "fig:dash-region-language")`), mis avaneb *Super*-klahviga (pilt \@ref(fig:keyboard-super) leheküljel `r render_pageref(reference = "fig:keyboard-super")`).
+
+```{r label = "dash-region-language", echo=FALSE, fig.cap = "*Dash* ning *Regional & Language*."}
+include_external_graphics("rmd/dash-region-language.png")
+
+```
+
+```{r label = "keyboard-super", echo=FALSE, fig.cap = "*Super*-klahv."}
+include_external_graphics("rmd/keyboard-super.png")
+
+```
+
+*Super*-klahv on tavaliselt Windowsi logoga.
+
+*Regional & Language*'s vajutan *+*-le (pilt \@ref(fig:plus-english) leheküljel `r render_pageref(reference = "fig:plus-english")`) ja kolmele punktile (pilt \@ref(fig:english) leheküljel `r render_pageref(reference = "fig:english")`). Seejärel valin *English (United Kingdom)* ja klikin *Add* (pilt \@ref(fig:english-uk) leheküljel `r render_pageref(reference = "fig:english-uk")`).
+
+```{r label = "plus-english", echo=FALSE, fig.cap = "Tuleb vajutada *+*'le, et saada nimekiri võimalikest lisatavatest keeltest."}
+include_external_graphics("rmd/plus-english.png")
+
+```
+
+```{r label = "english", echo=FALSE, fig.cap = "Kolme punkti kaudu näeb rohkem valikuid."}
+include_external_graphics("rmd/english.png")
+
+```
+
+```{r label = "english-uk", echo=FALSE, fig.cap = "Konkreetse inglise keele asetuse valimine."}
+include_external_graphics("rmd/english-uk.png")
+
+```
+
+Lõpuks vahetan keele hoides all *Super*-klahvi ja vajutades tühikule (pilt \@ref(fig:switch-language-en) leheküljel `r render_pageref(reference = "fig:switch-language-en")`).
+
+```{r label = "switch-language-en", echo=FALSE, fig.cap = "Keele vahetamine klahvikombinatsiooniga."}
+include_external_graphics("rmd/switch-language-en.png")
+
+```
+
+## Veebilehitseja avamine
+
+Kirjutan käsureale
+
+`firefox &`.
+
+keemia teisenduste lehed ja laupäevase koosoleku kokkuleppimine
+toidukeemia test
+toidukeemia laboriraport
+termodünaamika ja statistilise füüsika kontrolliks õppimine
+loodusteaduste klubi lepingutekst
+loodusteaduste klubi asjade nimekiri

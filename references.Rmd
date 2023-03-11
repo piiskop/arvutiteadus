@@ -1,0 +1,6 @@
+\onecolumn
+
+# Välised allikad {.unnumbered}
+
+\hyphenpenalty=10000
+\fontspec{Symbola}

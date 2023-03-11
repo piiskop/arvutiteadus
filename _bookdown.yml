@@ -1,0 +1,14 @@
+book_filename: "arvutiteadus"
+new_session: false
+delete_merged_file: true
+language:
+  label:
+    fig: 'Joonis '
+rmd_files: [
+  "index.Rmd",
+  "rmd/about.Rmd",
+  "rmd/andmete-esitus.Rmd",
+  "rmd/arvutigraafika.Rmd",
+  "rmd/ubuntu.Rmd",
+  "references.Rmd"
+]

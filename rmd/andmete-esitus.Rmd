@@ -1,20 +1,12 @@
----
-title: "Andmete esitus"
-author: 'peacecop kalmer:'
-date: "2/9/2022"
-output:
-  bookdown::html_document2:
-    toc: TRUE
-    toc_float: TRUE
----
+# Andmete esitus
 
-# Andmed arvutis
+## Andmed arvutis
 
 Kas arvuti tõlgendab andmeid samamoodi nagu inimene? Kui just tegemist ei ole inimarvutiga, siis on arvuti jaoks kõik andmed lihtsalt sisend, olek või väljund. Tähenduse andmetele annab inimene. Kui inimene eristab numbreid, sümboleid, loogikaväärtusi, pilte, helindeid, siis kuidas arvuti neid eristab? Kuidas arvuti üldse talletab andmeid? Kuniks kvantarvutid pole masstarbimisse jõudnud, kasutame selliseid arvuteid, mille süsteemid tuginevad kahendsüsteemil. Inimesena oleme pigem tuttavad kümnendsüsteemiga. Ometi on arvutisüsteemides palju lihtsam kasutada kahendsüsteemi, milles on iga mälukoha jaoks vaid kaks võimalikku erinevat väärtust. Sõltuvalt andmekandjast võib see tähendada, et elektrilaeng on või laengut pole, magnetjupike on pigem ühtpidi kui teistpidi, konarus või nõgu - alati kaks vastandlikku võimalikku väärtust. Kõik numbrid, sümbolid, loogikaväärtused, pildid ja helindid on arvuti jaoks sellisel kujul. Et paremini mõista, kui palju on vaja mälu millegi hoidmiseks, on kasulik tunda kahendsüsteemi, samuti teisi numbrisüsteeme, sest vahel kasutatakse arvutisüsteemides ka kaheksand- või 16-ndsüsteemi.
 
-# Arvusüsteemid
+## Arvusüsteemid
 
-## Mis ja milleks on erinevad arvusüsteemid?
+### Mis ja milleks on erinevad arvusüsteemid?
 
 The most widely used number system in the world is the decimal number system. What does it mean? We use ten digits from 0 - 9 and combine them to get numbers. For human beings, it is easier to calculate in decimal because once we multiply something by ten, we shift the decimal point to the right and once we divide something by ten, we just move the decimal point to the left.
 
@@ -32,7 +24,7 @@ Why are there so many different number systems available and what is the limit? 
 
 If the story has still some gaps for me, maybe, i want to read an article about [number systems and bases](https://betterexplained.com/articles/numbers-and-bases/).
 
-## Ühendsüsteem
+### Ühendsüsteem
 
 Kõige lihtsam arvusüsteem on ühendsüsteem. Nagu selle nimetuseski mainitud, on tegemist vaid ühe võimaliku väärtusega positsiooni kohta. Ühendsüsteemis kasutavad nt lapsed loendamiseks oma sõrmi. Filmidest oleme näinud, et kui keegi on pikaks ajaks vangistatud, siis ta tõmbab seinale kriipse, et loendada päevi. Võrdlen tabelis \@ref(tab:base-10-base-1) kümnendsüsteemi arve ühendsüsteemi arvudega.
 
@@ -47,7 +39,7 @@ Kõige lihtsam arvusüsteem on ühendsüsteem. Nagu selle nimetuseski mainitud, 
 
 Näeme, et mida suurem arv, seda rohkem positsioone on vaja arvu väljendamiseks. 32 õuna väljendamiseks oleks vaja 32 pulka ja ei piisaks isegi kõikidest ühe inimese sõrmedest. Seetõttu on ühendsüsteemi kasutamine ebatõhus.
 
-## Kahendsüsteem
+### Kahendsüsteem
 
 number of digits: 2
 
@@ -120,9 +112,9 @@ For independent reading:
 
 - [Binary Cards](https://www.csfieldguide.org.nz/en/interactives/binary-cards/)
 
-## Kolmendsüsteem
+### Kolmendsüsteem
 
-Kolmendsüsteemis on kasutuses kolm võimalikku erinevat numbrit, nt 0, 1 ja 2. Võrdlen tabelis \@ref(tab:bases-10-2-3)eri baaside arve.
+Kolmendsüsteemis on kasutuses kolm võimalikku erinevat numbrit, nt 0, 1 ja 2. Võrdlen tabelis \@ref(tab:bases-10-2-3) eri baaside arve.
 
 | Baas 10 | Baas 2 | Baas 3 |
 |--------:|-------:|-------:|
@@ -141,7 +133,7 @@ Kolmendsüsteemis on kasutuses kolm võimalikku erinevat numbrit, nt 0, 1 ja 2. 
 
 Kolmendsüsteemis saame kenasti loendada nullist kaheni ja siis on meil kasutada olevad erinevad sümbolid otsas ning tuleb uus ehk kolmeliste positsioon kasutusse võtta ja selle väärtus nullist üheks suurendada. Kahe positsiooniga saame kolmendsüsteemis loendada kuni 8~10~'ni, misjärel on vajalik juba üheksaliste positsioon kaasata.
 
-## Kaheksandsüsteem
+### Kaheksandsüsteem
 
 Kaheksandsüsteemi ehk oktaalsüsteemi kasutatakse ka arvutite maailmas, sest kuna kaheksa on kahe aste, siis on kaheksandsüsteemis võimalik inimeste jaoks arve loetavamaks ja lühemaks teha, kuigi arvuti jaoks jäävad need endiselt kahendsüsteemi arvudeks.
 
@@ -167,34 +159,34 @@ Kaheksandsüsteemi ehk oktaalsüsteemi kasutatakse ka arvutite maailmas, sest ku
 
 Tabelist \@ref(tab:bases-10-2-3-8) johtub, et kaheksandsüsteemis on nt arvu 14~10~ kujutamiseks vaja ainult kaht positsiooni, samal ajal kui kahendsüsteemis on vaja nelja bitti. Siiski tasub mõista, et isegi kui inimese jaoks on ainult kaks positsiooni kaheksandsüsteemis kasutuses, siis arvuti mälukasutuse suhtes tuleb ikkagi lähtuda kahendsüsteemi bittide arvust. Lihtsalt 16~8~ on inimesele lihtsam meeles pidada kui 1110~2~.
 
-# Milline on arvuti mälu?
+## Milline on arvuti mälu?
 
-# Mälupesa kui kast lihtandme jaoks
+## Mälupesa kui kast lihtandme jaoks
 
-# Mälu aadress
+## Mälu aadress
 
-# Failisüsteemid
+## Failisüsteemid
 
-# Ühikud
+## Ühikud
 
-# Tõeväärtused
+## Tõeväärtused
 
-# Arvud
+## Arvud
 
-# Sümbolid
+## Sümbolid
 
-# Arvusüsteemid
+## Arvusüsteemid
 
-# Aeg
+## Aeg
 
-# Geograafilised koordinaadid
+## Geograafilised koordinaadid
 
-# Värv
+## Värv
 
-# Kompleksandmetüübid
+## Kompleksandmetüübid
 
-## stack
+### stack
 
-## list
+### list
 
-## heap
+### heap

@@ -1,26 +1,18 @@
----
-title: "Arvutigraafika"
-author: 'peacecop kalmer:'
-date: "2/9/2022"
-output:
-  bookdown::html_document2:
-    toc: TRUE
-    toc_float: TRUE
----
+# Arvutigraafika
 
-# Sobilik tarkvara
+## Sobilik tarkvara
 
 Alustuseks on mõistlik oma arvutisse paigaldada sobilik tarkvara. Pole midagi hullu, kui sulle meeldib *Photoshop* või *Illustrator* või *Indesign* või *Lightroom*, sest siis su koht ei olegi siin, vaid ilmselgelt sa juba tead, mida ja oskad nendega teha. Mina eelistan tasuta avatud lähtekoodiga vabavara (FOSS), sest see on kõige kättesaadavam, selle vigu ja puudujääke saab raporteerida ning kes tahab ja oskab, saab ise vigu kõrvaldada ja funktsionaalsust täiendada. FOSS on väga ilmekas näide jagamisühiskonnast ja eeskujuks meie reaalsusele. Samuti soovitan opsüsteemina kasutada FOSS'i, nt *Ubuntu*t, mida saab piisava vaba salvestusruumi olemasolul ka *Windows*i kõrvale paigaldada. Olen alates aastast 2007 ise *Ubuntu*t kasutanud ja oskan sellel platvormil kõige paremini juhendada.
 
 Arvutigraafika loomiseks ja töötlemiseks on mitmeid vabavaralisi programme. Siinkohal käsitleme neist nelja. Valik on selline seetõttu, et mina olen neid nelja kasutanud ja isegi kasutan aktiivselt edasi, mistõttu tean, millest kirjutan ja räägin. Rastergraafika töötlemiseks soovitan paigaldada tarkvara nimega [GNU IMAGE MANIPULATION PROGRAM](https://www.gimp.org/) (GIMP). Kui sa sellega pole varem midagi teinud, siis praegu on veel vara küsida, mida sellega teha. Me teeme alul sama asja kõikide nende neljaga, et tekiks arusaam, et mingeid asju saab nende kõikidega teha, mingeid asju mitte ja et sama või sarnase toimingu jaoks on nupud ja menüüelemendid ehk eri kohas, vaja need vaid loogiliselt üles leida. Lühidalt, kui sa oled nt nutitelefoniga fotosid teinud, siis GIMP's saad nt nende fotode värve muuta või midagi välja lõigata ja teise kohta panna. Kui aga läheb korporatiivgraafika tegemiseks, vaja nt logo kujundada, siis selleks võiks olla paigaldatud tarkvara nimega  Tarkvaraga nimega [Inkscape](https://inkscape.org/). Kui tekib tahe maalida arvuti abil, soovitan paigaldada tarkvara nimega [Krita](https://krita.org/en/). Kõikide eelnevate tarkvaradega toodetud tulemuste kokkupanemiseks sobib [Scribus](https://www.scribus.net/), mille soovitan paigaldada vähemalt teisendina *1.5*. *Scribus*ega saab küljendada ja kujundada raamatuid, voldikuid, plakateid, nimekaarte, ajalehti jms.
 
-# Sobilik riistvara
+## Sobilik riistvara
 
 Juba [tarkvara](#sobilik-tarkvara) alapeatükis mainisin veidi sobilikke riistvara parameetreid. Lisan siia ühe olulise asjanduse, millega on palju mugavam joonistada kui kiviga ehk arvutihiirega - graafikatahvli. Mina kasutan XP-PEN'i [Deco 01](https://www.xp-pen.com/product/84.html), mille suurus on piisav, et lauale ära mahuks ja ei erine oluliselt ekraani suurusest. Selle pliiats ei vaja eraldi akut ja tahvel on põhiarvutiga ühendatud kaabliga, millega on tagatud, et keset joonistamist ühendus ei katkeks. Klienditugi on neil ka asjalik. Selle uuem ehk teine versioon maksab täna ehk 20220210 otse tootja kodulehelt ostes [59.49 * eurot](https://www.storexppen.eu/), aga see pakkumine kehtib vist veel ainult veidi üle viie tunni, misjärel on selle hind 69.99 * eurot. Nad ei küsi isegi saatekulu hüvitamiseks tasu. Soovitan selline seadeldis soetada, kui seda veel pole, sest sellega saab palju täpsemalt asju ajada kui hiirega, sest pliiatsit liigutades kasutad sa väikeseid sõrmelihaseid, mitte suurt küünarvarre lihast.
 
 Lisaks soovitan tähelepanu pöörata kuvari ekraanile. Läikeekraan on suurepärane valik üksnes siis, kui sa kasutad seda ideaalsetes valgustingimustes, sest see peegeldab ohtralt valgust ja raskendab ekraanil oleva nägemist võimaldades siiski erksamaid värvitoone kui mattekraan, mida sa saad kasutada mis tahes valgustingimustes. Kui läikeekraan on puutetundlik, siis näpujäljed jäävad sellele palju lihtsamini kui mattekraanile.
 
-# Mille poolest erinevad vektor- ja rastergraafika?
+## Mille poolest erinevad vektor- ja rastergraafika?
 
 Matemaatikast on nii mõnelegi inimesele tuttav vektori mõiste. Vektor on nagu lõik, aga suunaga. Vektorgraafika ei sisalda vektoreid. Mina nimetaksin seda pigem geomeetriliseks graafikaks, sest see koosneb geomeetrilistest elementidest nagu lõigud, ristkülikud, ellipsid jms. Teatavasti ei ole matemaatilisel vektoril asukohta. Geomeetrilises graafikas on asukoht väga oluline. Iga geomeetrilise graafika sihitis on mingi asukohaga, sellele on mingi suurus, nt joonel jämedus ja pikkus, samuti värv ja läbipaistvus. Iga selline sihitis on seega kirjeldatav tekstiliselt.
 
@@ -32,7 +24,7 @@ Kuna geomeetriline pilt on matemaatiliselt ja tekstiliselt kirjeldatav, saab iga
 
 Kas inimese silm näeb geomeetrilist või rastermaailma? Silm ei erista nähtavaid sihitisi, vaid neelab ainult eri lainepikkusega elektromagnetlaineid, mistõttu on tegemist rasterpildiga.
 
-# Arvutigraafika olemus ja vajadus
+## Arvutigraafika olemus ja vajadus
 
 ## Arvutigraafika tutvustus
 
@@ -48,59 +40,59 @@ Kas inimese silm näeb geomeetrilist või rastermaailma? Silm ei erista nähtava
 
 ## Värviteooria
 
-# Arvutigraafika liigid
+## Arvutigraafika liigid
 
-# Vektorgraafika
+### Vektorgraafika
 
-## Vektorgraafika olemus
+#### Vektorgraafika olemus
 
-## Vektorgraafikas tehtud faili seletamine ja kasutamine
+#### Vektorgraafikas tehtud faili seletamine ja kasutamine
 
-## Vektorgraafikas pildi loomine
+#### Vektorgraafikas pildi loomine
 
-# Rastergraafika
+### Rastergraafika
 
-## Rastergraafika olemus
+#### Rastergraafika olemus
 
-## Pilditöötlus rastergraafikas
+#### Pilditöötlus rastergraafikas
 
-### Värvide muutmine
+#### Värvide muutmine
 
-### Kollaaži tegemine
+#### Kollaaži tegemine
 
-### Katkise pildi "tervendamine"
+#### Katkise pildi "tervendamine"
 
-# Ülesanded
+## Ülesanded
 
-## Vektorgraafika
+### Vektorgraafika
 
-### Valmis pildi imiteerimine
+#### Valmis pildi imiteerimine
 
-## Rastergraafika
+### Rastergraafika
 
-### Pilt piksliteks paberil
+#### Pilt piksliteks paberil
 
-### Tekst pildiks
+#### Tekst pildiks
 
-### Katkise pildi "tervendamine"
+#### Katkise pildi "tervendamine"
 
-### Kollaaži tegemine, ka nii et sama objekt mitmekordselt - *tlü* kataloogis
+#### Kollaaži tegemine, ka nii et sama objekt mitmekordselt - *tlü* kataloogis
 
-## Küljendus
+### Küljendus
 
-### Valmis PDF'i või pildi järgi küljenduse tegemine
+#### Valmis PDF'i või pildi järgi küljenduse tegemine
 
-### Etiketi tegemine
+#### Etiketi tegemine
 
-### Postri tegemine
+#### Postri tegemine
 
-### Voldiku tegemine
+#### Voldiku tegemine
 
-## Nii raster- kui vektorgraafika
+### Nii raster- kui vektorgraafika
 
-### Varju tegemine inimese kujust nii *Inkscape*'s kui *Gimp*'s
+#### Varju tegemine inimese kujust nii *Inkscape*'s kui *Gimp*'s
 
-# Õpiväljundid
+## Õpiväljundid
 
 Õpilane saavutab kursuse lõpuks eeldatavalt järgmised õpiväljundid:
 

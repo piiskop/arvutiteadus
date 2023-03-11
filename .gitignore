@@ -3,3 +3,8 @@
 .RData
 .Ruserdata
 _site/
+_book
+_main.log
+about.log
+about.tex
+arvutiteadus.log
