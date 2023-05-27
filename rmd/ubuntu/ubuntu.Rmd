@@ -51,14 +51,14 @@ Arvutiprogramm veebilehtede vaatamiseks on nt "Firefox" või "Chrome", meilide h
 Pildil \@ref(fig:gui-dash-button) leheküljel `r render_pageref(reference = "fig:gui-dash-button")` on näha "GNOME 3" töölaua keskkond. Vasakul oleval ribal on hulganisti ikoone, millele klikkides saab avada n-ö lemmikrakendusi. Nende all on üheksa täpiga nupp. Kui liigutad osundikursori selle kohale, ilmub tekst "Rakenduste kuvamine" keeles, milles sinu "Ubuntu" koopia on. Vajuta sellele nupule!
 
 ```{r label = "gui-dash-button", echo=FALSE, fig.cap = "*GNOME 3*: all vasakul nurgas on üheksa täpiga nupp, mille kaudu saab rakendusi avada."}
-include_external_graphics("rmd/rakenduste-kuvamine-72.jpg")
+include_external_graphics("rmd/ubuntu/rakenduste-kuvamine-72.jpg")
 
 ```
 
 Üles äärde tekib luubi ikooniga otsinguväli (pilt \@ref(fig:gui-dash-search) leheküljel `r render_pageref(reference = "fig:gui-dash-search")`). Sinna saad kirjutada rakenduse nime, mida soovid avada. Selle all kuvatakse rakenduste loend, mille nimes sõne, mille oled otsinguväljale kirjutanud. Seejärel saad loendist valida vajaliku rakenduse ja selle ikoonile klikkida rakenduse avamiseks. Võid ka sõrmistikul kasutada nooleklahve valimiseks ning "Enter"-klahvi avamiseks. Vaikimisi avatakse kõige esimene rakendus loetelus.
 
 ```{r label = "gui-dash-search", echo=FALSE, fig.cap = "Luubiga tähistatud otsingukasti kirjutama hakates filterdatakse rakenduste loetelu vastavalt nimes sisalduvale kirjutatud tekstiosale."}
-include_external_graphics("rmd/kasut.jpg")
+include_external_graphics("rmd/ubuntu/kasut.jpg")
 
 ```
 
@@ -71,7 +71,7 @@ Kasutajakontot saab luua nii graafilist kasutajaliidest (GUI) kasutades kui ka t
 Kasutajakonto lisamise käsk on `adduser` (pilt \@ref(fig:adduser) leheküljel `r render_pageref(reference = "fig:adduser")`). Kuna kasutajakontosid saab hallata üksnes *sudo* grupis olev kasutaja, siis tuleb selle käsu ette kirjutada `sudo`. Sellele programmile tuleb kirjutada üks sisendparameeter, milleks on sinu kasutajanimi. Seejärel küsitakse salasõna, mida hakkad kasutama. Seda kirjutades sa ei näe, et miski ekraanile ilmub, kuna muidu võiks keegi teine näha sinu parooli. Sama parool tuleb kinnitada. Viimaks küsitakse sult rida andmeid, millele võib vastamata jätta. Need andmed tuleb `Y`-ga kinnitada.
 
 ```{r label = "adduser", echo=FALSE, fig.cap = "Kasutajakonto loomine."}
-include_external_graphics("rmd/adduser.png")
+include_external_graphics("rmd/ubuntu/adduser.png")
 
 ```
 
@@ -92,7 +92,7 @@ Avanenud menüüst otsi selle kasutaja nimi, mille kontos sa parajasti sees oled
 Vajuta *Logi välja* (see on tõlgitud tekst)!
 
 ```{r label = "logout", echo=FALSE, fig.cap = "Väljalogimine graafilise liidese kaudu."}
-include_external_graphics("rmd/logout.png")
+include_external_graphics("rmd/ubuntu/logout.png")
 
 ```
 
@@ -101,7 +101,7 @@ include_external_graphics("rmd/logout.png")
 Käsk väljalogimiseks terminali emulaatoris on `gnome-session-quit` (pilt \@ref(fig:logout-terminal) leheküljel `r render_pageref(reference = "fig:logout-terminal")`).
 
 ```{r label = "logout-terminal", echo=FALSE, fig.cap = "Väljalogimine tekstiliidese kaudu."}
-include_external_graphics("rmd/logout-terminal.png")
+include_external_graphics("rmd/ubuntu/logout-terminal.png")
 
 ```
 
@@ -114,7 +114,7 @@ include_external_graphics("rmd/logout-terminal.png")
 Paigaldamiseks on ette nähtud käsk `apt`. Kuna tarkvara haldus tähendab muudatusi operatsioonisüsteemis, siis saab seda käsku kasutada üksnes, kui selle ette lisada `sudo`. `apt`-le järgneb alamkäsk `install`, mille järele saab kirjutada tühikuga eraldatult kõik need programmid, mille tahame paigaldada (pilt \@ref(fig:sudo-apt-install-inkscape) leheküljel `r render_pageref(reference = "fig:sudo-apt-install-inkscape")`).
 
 ```{r label = "sudo-apt-install-inkscape", echo=FALSE, fig.cap = "*inkscape*'i paigaldamine *apt*iga."}
-include_external_graphics("rmd/sudo-apt-install-inkscape.png")
+include_external_graphics("rmd/ubuntu/sudo-apt-install-inkscape.png")
 
 ```
 
@@ -125,7 +125,7 @@ apt-ga saame paigaldada ainult tarkvara, mis on heaks kiidetud "Debiani" või se
 Mõni tarkvara ei jõua "Ubuntu" varamusse, sest see on liiga aeglane või katkine, ühesõnaga ebapiisav sellise varamu jaoks. Ilma kolmanda osapoole heakskiiduta saavad tarkvaraarendajad oma tehtud tarkvara toppida "snapi" varamusse. Sealt paigaldamiseks on vaja käsureal asendada "apt" käsuga `snap` (pilt \@ref(fig:sudo-snap-install-eclipse-classic) leheküljel `r render_pageref(reference = "fig:sudo-snap-install-eclipse-classic")`). "Eclipse"-i paigaldamiseks tuleb veel lõppu lisada `--classic`.
 
 ```{r label = "sudo-snap-install-eclipse-classic", echo=FALSE, fig.cap = "*eclipse*'i paigaldamine *snap*iga."}
-include_external_graphics("rmd/sudo-snap-install-eclipse-classic.png")
+include_external_graphics("rmd/ubuntu/sudo-snap-install-eclipse-classic.png")
 
 ```
 
@@ -147,7 +147,7 @@ Terminali emulaator jäljendab füüsilist terminali tarkvaraliselt. Sellesse pr
 Alloleval pildil on avatud terminali emulaator.
 
 ```{r label = "terminal-emulator", echo=FALSE, fig.cap = "Terminali emulaator."}
-include_external_graphics("rmd/terminal-emulator.png")
+include_external_graphics("rmd/ubuntu/terminal-emulator.png")
 
 ```
 
@@ -179,12 +179,12 @@ Vahel on vaja teada nt pildifaili kohta, millised on selle tihedus ja mõõtmed.
 Minu näites tahan ma teada kataloogis *~/eclipse-workspace/test2* asuva faili *children-computers.jpg* omadusi (pilt \@ref(fig:file) leheküljel `r render_pageref(reference = "fig:file")`). Näeme, et selle faili tihedus on $\numproduct{96 x 96}$ dpi ja mõõdud on $\numproduct{668 x 371}$ px.
 
 ```{r label = "pwd", echo=FALSE, fig.cap = "Teekonna kuvamine kataloogini, kus parasjagu ollakse."}
-include_external_graphics("rmd/pwd.png")
+include_external_graphics("rmd/ubuntu/pwd.png")
 
 ```
 
 ```{r label = "file", echo=FALSE, fig.cap = "Faili metaandmete vaatamine."}
-include_external_graphics("rmd/file.png")
+include_external_graphics("rmd/ubuntu/file.png")
 
 ```
 
@@ -211,7 +211,7 @@ Tähendus:
 : Eesti piirkonna tähis
 
 ```{r label = "keyboard", echo=FALSE, fig.cap = "Sõrmistik."}
-include_external_graphics("rmd/keyboard.png")
+include_external_graphics("rmd/ubuntu/keyboard.png")
 
 ```
 
@@ -222,7 +222,7 @@ Vajuta nüüd mingile klahvile! Pane tähele, et see klahv, mille oled alla vaju
 Nt pildil \@ref(fig:alt-f) leheküljel `r render_pageref(reference = "fig:alt-f")` on vajutatud alla korraga kaks klahvi. Ülemine neist on klahv, millel on neli sümbolit.
 
 ```{r label = "alt-f", echo=FALSE, fig.cap = "Kaks klahvi on korraga alla vajutatud."}
-include_external_graphics("rmd/alt-f.png")
+include_external_graphics("rmd/ubuntu/alt-f.png")
 
 ```
 
@@ -245,12 +245,12 @@ Mõne toimingu jaoks kombineeritakse klahve *Control*-klahviga (ctrl). Nt paljud
 Typingtest.com toimib ainult ingliskeelse sõrmistikuga. Kui mu arvutis seda veel ei ole, siis avan *Regional & Language*'i kasutades *Dash*'i (pilt \@ref(fig:dash-region-language) leheküljel `r render_pageref(reference = "fig:dash-region-language")`), mis avaneb *Super*-klahviga (pilt \@ref(fig:keyboard-super) leheküljel `r render_pageref(reference = "fig:keyboard-super")`).
 
 ```{r label = "dash-region-language", echo=FALSE, fig.cap = "*Dash* ning *Regional & Language*."}
-include_external_graphics("rmd/dash-region-language.png")
+include_external_graphics("rmd/ubuntu/dash-region-language.png")
 
 ```
 
 ```{r label = "keyboard-super", echo=FALSE, fig.cap = "*Super*-klahv."}
-include_external_graphics("rmd/keyboard-super.png")
+include_external_graphics("rmd/ubuntu/keyboard-super.png")
 
 ```
 
@@ -259,24 +259,24 @@ include_external_graphics("rmd/keyboard-super.png")
 *Regional & Language*'s vajutan *+*-le (pilt \@ref(fig:plus-english) leheküljel `r render_pageref(reference = "fig:plus-english")`) ja kolmele punktile (pilt \@ref(fig:english) leheküljel `r render_pageref(reference = "fig:english")`). Seejärel valin *English (United Kingdom)* ja klikin *Add* (pilt \@ref(fig:english-uk) leheküljel `r render_pageref(reference = "fig:english-uk")`).
 
 ```{r label = "plus-english", echo=FALSE, fig.cap = "Tuleb vajutada *+*'le, et saada nimekiri võimalikest lisatavatest keeltest."}
-include_external_graphics("rmd/plus-english.png")
+include_external_graphics("rmd/ubuntu/plus-english.png")
 
 ```
 
 ```{r label = "english", echo=FALSE, fig.cap = "Kolme punkti kaudu näeb rohkem valikuid."}
-include_external_graphics("rmd/english.png")
+include_external_graphics("rmd/ubuntu/english.png")
 
 ```
 
 ```{r label = "english-uk", echo=FALSE, fig.cap = "Konkreetse inglise keele asetuse valimine."}
-include_external_graphics("rmd/english-uk.png")
+include_external_graphics("rmd/ubuntu/english-uk.png")
 
 ```
 
 Lõpuks vahetan keele hoides all *Super*-klahvi ja vajutades tühikule (pilt \@ref(fig:switch-language-en) leheküljel `r render_pageref(reference = "fig:switch-language-en")`).
 
 ```{r label = "switch-language-en", echo=FALSE, fig.cap = "Keele vahetamine klahvikombinatsiooniga."}
-include_external_graphics("rmd/switch-language-en.png")
+include_external_graphics("rmd/ubuntu/switch-language-en.png")
 
 ```
 
@@ -286,9 +286,126 @@ Kirjutan käsureale
 
 `firefox &`.
 
-keemia teisenduste lehed ja laupäevase koosoleku kokkuleppimine
-toidukeemia test
+keemiatelefoni lehed
 toidukeemia laboriraport
-termodünaamika ja statistilise füüsika kontrolliks õppimine
+termodünaamika lugemine
 loodusteaduste klubi lepingutekst
 loodusteaduste klubi asjade nimekiri
+loodusteaduste klubi eksperimentide kirjeldused
+sirje vaaskile vastamine
+optika õpe
+
+## Ülesanded
+
+### *mkdir*[]{#mkdir}
+
+#### Eesmärk
+
+Harjutatud sihtotstarbeliselt kasutama käske mkdir, mv ja rmdir.
+
+#### Juhis
+
+1. Loome kataloogi maailm.
+
+2. Millest maailm koosneb? Maailma jagudest nt. Loome _maailm_a kataloogiga samale tasemele kahe maailma jao jaoks alamkataloogid euroopa ja ameerika.
+
+3. Oi, valesse kohta sai loodud alamkataloogid! Euroopa ja Ameerika on ju maailma osad, seetõttu peavad need kataloogid olema maailma kataloogi sees. Liigutame need kataloogid _maailm_a sisse.
+
+4. Millest Euroopa koosneb? Keegi teadis, et Euroopas on Baltikum ja Skandinaavia. Loome euroopa alamkataloogi alamkataloogid baltikum ja skandinaavia.
+
+5. Millest koosneb Baltikum? Kuskil on kirjas, et nt Eestist ja Leedust. Loome vastavad alamkataloogid õigesse kohta.
+
+6. Külamutt ütles, et Skandinaavias on Soome ja Rootsi. Loome vastavad alamkataloogid skandinaavia alamkataloogi.
+
+7. Külamutt ei teadnud, et Soome ei ulatu Skandinaaviasse. Ja üldse pole meil Soomega mingit asja, seega eemaldame Soome alamkataloogi.
+
+8. Nüüd on piirkondade struktuur kataloogidena loodud. Naaber palub endale ka sellist struktuuri. Ei viitsi minna ja tema arvutisse kõiki neid käske ükshaaval sisse toksida. Tuleb teha programmifail, mis tekitab selle struktuuri, kui ta oma arvutis selle faili käivitab.
+
+9. Kunagi ei tea, kui kaua mingi programmi jooksutamine kestab. Sestap oleks vinge, kui selles _maailm_a kataloogis oleks pärast selle eelmises punktis loodud skripti käimalaskmist ka fail infoga, millal struktuuri loomist alustati ja millal lõpetati. See on boonussamm ja ühtlasi väljakutse, sest ma ei ole veel õpetanud, kuidas sellise infoga faili luua, aga õpilane ehk oskab välja selgitada, kuidas seda teha. date-käsk on ju selge ja vaja vaid otsida, kuidas see info sellesse logifaili jõuaks.
+
+### *mv*-käskude kasutamise harjutamine
+
+#### Eesmärk
+
+On selge, kuidas kasutada mv-käske praktikas.
+
+#### Eeldus
+
+Olemas on [*maailm*a kataloogi esialgne struktuur]{#mkdir} ja seda pole pärast vastava ülesande täideviimist muudetud.
+
+#### Juhis
+
+1. Maailma on haaranud hullus. Geograafilisi piirkondi on hakatud ümber nimetama vastavalt juhtunud sündmustele või kujunuenud olukorrale. Euroopas olevat kasutuses Ameerika reeglid. Järelikult tuleb euroopa kataloog nihutada ameerika kataloogi.
+
+2. Kuna muistsed eestlased olevat viikingitele tuule alla teinud, siis tuleb skandinaavia ümber nimetada _baltikum_iks, aga nii, et enne ümbernimetamist oleks automaatselt tehtud varukoopia _baltikum_i kataloogist.
+
+3. Nüüd on niimoodi, et Rootsi on justkui Baltikumis, aga mingis tildega Baltikumis on Eesti ja Leedu. See on väga imelik. Justnagu hoopis rootslased oleksid ikkagi Eesti üle võtnud. Noh, nad tegidki seda, aga savi sellest. Igatahes tuleb nüüd asi selgemaks teha ja see kataloog, kus on Rootsi, nimetada ümber selleks kataloogiks, kus on Eesti ja Leedu, aga nii, et Eesti ja Leedu Baltikumi-kaust saaks varundatud nimelaiendiga korrektne.
+
+4. Keegi teadis mainida, et maailmas on rohkem maailmajagusid. Austraalia on puudu selles kataloogipuus. Vaja lisada.
+
+5. Kuna nii mõnelegi Eesti tudengile on meeldinud minna Austraaliasse talutööd tegema ja et uus keskkond liiga võõras ei oleks, võtaks naabrid rootslased kaasa, siis tuleb nüüd nihutada ühekorraga rootsi ja eesti kaust austraalia kausta.
+
+6. Esimese eestlasena läks Austraaliasse ervin. Seega tuleb eesti kataloogi luua tühi fail nimega ervin.txt.
+
+7. Esimese eestlannana läks Austraaliasse linda. Seega tuleb eesti kataloogi luua tühi fail nimega linda.txt.
+
+8. ervin ei ole nõus, et teda nii nimetatakse. Ta väidab, et ta nimi on hoopis linda. Seega käsib ta enda fail vastavalt ümber nimetada. Sina pole aga sellega nõus, sest siis, kui ta Austraaliasse läks, oli ta ervin. Oled nõus tingimuslikult laskma teha ümbernimetamise ja tingimus on, et ümbernimetamine toimub, kui ervin saabus Austraaliasse viimasena. Üks käsk peab kõiki neid tingimusi arvestama.
+
+9. ervin ähvardab sind alligaatoriga ja käsib tingimusteta alistuda ja ümbernimetamine ellu viia. Sinul läheb junn jahedaks ja teed ära, aga et teised ka näeksid, siis lased sama käsu korras ekraanile välja pritsida tagantjärele teabe, et selline ümbernimetamine tehti.
+
+### Viitamine
+
+#### Eesmärk
+
+Omandatud oskus viidata absoluutselt ja suhteliselt kataloogidehierarhias.
+
+#### Juhis
+
+1. Tekitan endale kataloogidehierarhia järgmise rongipeatuste kohta, nii et iga peatus on kataloog:
+
+    * Tallinn
+    
+        * Keila
+        
+            * Klooga
+            
+                * Kloogaranna
+        
+                * Paldiski
+            
+            * Turba
+            
+        * Viljandi
+        
+        * Tapa
+        
+            * Tartu
+            
+                * Valga
+                
+                * Piusa
+                
+            * Narva[@a2023].
+
+2.  Kirjutan välja suhtelise teekonna, mis läbib kõiki rongipeatusi punktis *1* esitatud järjekorras alustades Tallinnast ja lõpetades Tallinnaga. Nt, kui soovitakse sõita niimoodi Tallinnast Viljandisse, siis see teekond oleks `Keila/Klooga/Kloogaranna/../Paldiski/../../Turba/../../Viljandi`.
+
+3. Kirjutan välja absoluutse teekonna Viljandini.
+
+4. Nüüd, kui kõiki peatusi on tundma õpitud, võiks sõita mõnda kohta pikemaks peatuseks. Alustan endiselt Tallinnast. Esimene sihtpunkt ongi Tallinn. Kirjutan välja nii suhtelise kui absoluutse teekonna.
+
+5. Kirjutan välja nii suhtelise kui absoluutse teekonna iga kord viimatisest peatuspaigast alustades järgmiste peatuspaikadeni:
+
+    a. Keila,
+    
+    b. Tallinn,
+    
+    d. Paldiski,
+    
+    e. Tartu,
+    
+    f. Tapa,
+    
+    g. Narva,
+    
+    h. Tallinn.
+    
