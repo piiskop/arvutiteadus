@@ -323,6 +323,8 @@ Harjutatud sihtotstarbeliselt kasutama käske mkdir, mv ja rmdir.
 
 9. Kunagi ei tea, kui kaua mingi programmi jooksutamine kestab. Sestap oleks vinge, kui selles _maailm_a kataloogis oleks pärast selle eelmises punktis loodud skripti käimalaskmist ka fail infoga, millal struktuuri loomist alustati ja millal lõpetati. See on boonussamm ja ühtlasi väljakutse, sest ma ei ole veel õpetanud, kuidas sellise infoga faili luua, aga õpilane ehk oskab välja selgitada, kuidas seda teha. date-käsk on ju selge ja vaja vaid otsida, kuidas see info sellesse logifaili jõuaks.
 
+[]{#practicing-mv-commands}
+
 ### *mv*-käskude kasutamise harjutamine
 
 #### Eesmärk
@@ -409,3 +411,20 @@ Omandatud oskus viidata absoluutselt ja suhteliselt kataloogidehierarhias.
     
     h. Tallinn.
     
+### Paljundamine
+
+#### Eesmärk
+
+Selge, kuidas kasutada käsku `cp`.
+
+#### Eeldus
+
+Olemas on failistruktuur koos sisuga ülesande [*mv*-käskude harjutamine](#practicing-mv-commands) korrektse sooritamise järgselt.
+
+#### Juhend
+
+1. Kuna tekkis segadus, kes keegi on, siis on vaja täpsemalt kirjeldada. Tekitan olemasolevasse faili *linda.txt* sisu, milles esimesel real on näidatud linda sugu, teisel real tema nimi ja lõpus on reavahetus.
+
+2. Keegi nägi lindat ka Baltikumis, nii et mainitud fail *linda.txt* tuleb paljundada korrektse Baltikumi kataloogi.
+
+3. Andmekaitse Inspektsioonist teatati, et nimi tulevat hoida salajas. Seega ei tohi agentidele anda teada faile inimeste nimedega. Kuid meie peame saama identifitseerida kähku nime järgi. Seetõttu on vaja sellist moodust, et me meie ja agent näeme eri faile, aga nii, et kui me teeme inimese-nimelisse faili muudatuse, näeks agent seda muudatust oma failis, mis on üldise nimega samas kataloogis. Ühtlasi peab süsteem olema selline, et kui nimetame hiljem ülemkataloogi ümber, jääksid failid omavahel endiselt sünkrooni.
