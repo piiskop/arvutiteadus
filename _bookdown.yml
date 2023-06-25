@@ -10,6 +10,6 @@ rmd_files: [
   "rmd/about.Rmd",
   "rmd/andmete-esitus.Rmd",
   "rmd/arvutigraafika.Rmd",
-  "rmd/ubuntu.Rmd",
+  "rmd/ubuntu/ubuntu.Rmd",
   "references.Rmd"
 ]
