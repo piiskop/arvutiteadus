@@ -1,0 +1,32 @@
+# Kaivitusfaili koostamine
+
+Kaivitusfaili loomiseks vajalikud sammud  : 
+
+1.  Avan *emacs* - iga faili  - 
+
+    ```{sh eval=FALSE}
+    emacs maailm.sh 
+    
+    ```
+    
+    Peale kasu kaimalaskmist avaneb tuhi fail , kuhu saab infot sisestada ja salvestada sisestatud materjal.
+    Sulen *emacs*.
+    
+2.  Annan failile kaivitusoiguse 
+
+    ```{sh eval=FALSE}
+    chmod u+x maailm.sh
+    
+    ```
+    
+3.  Lasen kaima kasuga :
+
+    ```{sh eval=FALSE}
+    ./maailm.sh
+    
+    
+    ```
+    
+
+ 
+

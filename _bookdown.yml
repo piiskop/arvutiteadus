@@ -6,6 +6,7 @@ language:
     fig: 'Joonis '
 rmd_files: [
   "index.Rmd",
+  "rmd/mote.Rmd",
   "rmd/about.Rmd",
   "rmd/andmete-esitus.Rmd",
   "rmd/arvutigraafika.Rmd",
