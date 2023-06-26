@@ -427,4 +427,60 @@ Olemas on failistruktuur koos sisuga ülesande [*mv*-käskude harjutamine](#prac
 
 2. Keegi nägi lindat ka Baltikumis, nii et mainitud fail *linda.txt* tuleb paljundada korrektse Baltikumi kataloogi.
 
-3. Andmekaitse Inspektsioonist teatati, et nimi tulevat hoida salajas. Seega ei tohi agentidele anda teada faile inimeste nimedega. Kuid meie peame saama identifitseerida kähku nime järgi. Seetõttu on vaja sellist moodust, et me meie ja agent näeme eri faile, aga nii, et kui me teeme inimese-nimelisse faili muudatuse, näeks agent seda muudatust oma failis, mis on üldise nimega samas kataloogis. Ühtlasi peab süsteem olema selline, et kui nimetame hiljem ülemkataloogi ümber, jääksid failid omavahel endiselt sünkrooni.
+3. Andmekaitse Inspektsioonist teatati, et nimi tulevat hoida salajas. Seega ei tohi agentidele anda teada faile inimeste nimedega. Kuid meie peame saama identifitseerida kähku nime järgi. Seetõttu on vaja sellist moodust, et meie ja agent näeme eri faile, aga nii, et kui me teeme inimese-nimelisse faili muudatuse, näeks agent seda muudatust oma failis, mis on üldise nimega samas kataloogis. Ühtlasi peab süsteem olema selline, et kui nimetame hiljem ülemkataloogi ümber, jääksid failid omavahel endiselt sünkrooni.
+
+4. Eestis asuv linda hüpnotiseeriti ja nüüdsest saab igaüks teda muuta. Selleks annan Eesti kataloogis olevale linda failile kirjutamisõiguse kõigile.
+
+5. Kuna ervinit ja lindat kahtlustatakse sarnastes tegudes, siis on vaja toimik avada ka ervini kohta. Kõige lihtsam oleks linda toimik lihtsalt paljundada. Uurija ei viitsi õigustega käsitsi möllata, aga samas ei saa ervini toimik sisaldada linda toimiku sisu. Seetõttu tuleb paljundada Eestis asuv linda toimik ervini toimikuks samas kataloogis, nii et ervini faili ei tekiks linda faili sisu, küll aga jagaksid failid samu failiõigusi.
+
+6. Uurija unustab, kas Baltikumi kataloogis juba on linda info ja pole aega ka, et järele vaadata, mistõttu kopeerib kähku linda toimiku Eestist Baltikumi kasutades aga kindlustust, et linda vana toimik Baltikumis, kui see seal siiski oli, varundataks.
+
+7. Ühtlasi on vaja paljundada inimese-nimeline fail Eesti kataloogist Baltikumi kataloogi, aga niimoodi, et see jääks viiteks.
+
+### Paljundamine: praktiline lähenemine
+
+#### Eesmärk
+
+Selge, kuidas kasutada käsku `cp`.
+
+#### Juhised
+
+1. Tekitan kaks kataloogi rongipeatuste jaoks, millest esimene on tegusaks kasutamiseks ja teine varundamiseks. Nende nimed võiksid olla nt *peatused* ja *peatused-varundatud*.
+
+2. Kataloogi *peatused* tekitan failina peatuse *tallinn.csv*.
+
+3. Varundan peatuse *tallinn.csv*.
+
+4. Teen kataloogis *peatused* failile *tallinn.csv* suhtelise viite *reval.csv*.
+
+5. Teen kataloogis *peatused* uue peatusefaili *keila.csv*.
+
+6. Annan failile *keila.csv* kirjutamisõiguse kõigile.
+
+7. Kirjutan faili *keila.csv* esimese mõtte, mis pähe tuleb seoses Keila peatusega.
+
+8. Tahan varundada üksnes kasulikku infot, seega nt peatuste nimesid, aga mitte mingeid uitmõtteid, mistõttu paljundan *keila.csv* varunduskataloogi niimoodi, et paljundataks ainult faili nimi.
+
+9. Tahan siiski paljundada ka uitmõtte, kuid ei mäleta, mida ma varem paljundasin. Seega paljundan *keila.csv* varunduskataloogi, nii et viimases olevast vastavast eelnevalt eksisteerinud failist tehtaks omakorda varukoopia automaatselt.
+
+10. Teen ka Tallinna peatuse viitest varukoopia, nii et suhteline viitamine säiliks.
+
+11. Teen uue peatuse Kloogaranna.
+
+12. Kuna ma ei mäleta, mis on vahepeal muudetud, siis varundan kõik peatused, aga niimoodi, et olemasolevaid faile üle ei kirjutataks.
+
+13. Mäluga on ikka mingi jama. Võiks siiski kõik failid üle käia interaktiivselt, st varundada, nii et iga faili puhul küsitaks, kas kirjutada üle või mitte.
+
+14. Tekitan uue peatuse Narva jaoks.
+
+15. Varundan Narva peatuse faili juurkasutajana.
+
+16. Teen uue peatuse Tapa jaoks.
+
+17. Varundan juurkasutajana Tapa peatuse faili, nii et faili kasutusõigused, omandus ja ajatempel säiliksid.
+
+18. Varundan ainult Keila peatuse faili, aga nii, et selle õigused säiliksid.
+
+19. Varundan ainult Keila peatuse faili, aga nii, et selle ajatempel säiliks.
+
+20. Teen veel teise varukoopia kogu peatuste kataloogist.
