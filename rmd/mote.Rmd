@@ -27,6 +27,3 @@ Kaivitusfaili loomiseks vajalikud sammud  :
     
     ```
     
-
- 
-
