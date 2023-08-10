@@ -7,6 +7,7 @@ language:
 rmd_files: [
   "index.Rmd",
   "rmd/kaivitusfaili-koostamine.Rmd",
+  "rmd/riistvara.Rmd",
   "rmd/about.Rmd",
   "rmd/andmete-esitus.Rmd",
   "rmd/arvutigraafika.Rmd",

@@ -1,0 +1,6 @@
+# Riistvara
+
+```{r label = "hardware", echo=FALSE}
+knitr::include_url("https://learningapps.org/view409713")
+
+```
