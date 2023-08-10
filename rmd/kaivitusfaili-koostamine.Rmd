@@ -2,7 +2,7 @@
 
 Kaivitusfaili loomiseks vajalikud sammud  : 
 
-1.  Avan *emacs* - iga faili  - 
+1.  Avan *emacs* _emacs_- iga faili  - 
 
     ```{sh eval=FALSE}
     emacs maailm.sh 
@@ -10,7 +10,7 @@ Kaivitusfaili loomiseks vajalikud sammud  :
     ```
     
     Peale kasu kaimalaskmist avaneb tuhi fail , kuhu saab infot sisestada ja salvestada sisestatud materjal.
-    Sulen *emacs*.
+    Sulen `emacs`.
     
 2.  Annan failile kaivitusoiguse 
 
@@ -26,7 +26,7 @@ Kaivitusfaili loomiseks vajalikud sammud  :
     
     
     ```
-    
+
 
  
 
