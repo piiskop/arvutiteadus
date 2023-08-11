@@ -1,0 +1,6 @@
+# Arvusüsteemid
+
+```{r label = "decoding-symbols", echo=FALSE}
+knitr::include_url("https://learningapps.org/view6517846")
+
+```
