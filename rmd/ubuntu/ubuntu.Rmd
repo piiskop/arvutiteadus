@@ -38,6 +38,32 @@ Iga teema puhul käsitleme jupikaupa teooriat ja kohe praktikat otsa, et seda te
 
 Kui arvestada kolm pooleteise tunnist sessiooni nädalas, pluss iseseisev harjutamine, siis minimaalselt kulub iga teema peale keskmiselt kaks nädalat. Täpsemalt kestust ennustada ei saa, kuna sõltub, kui põhjalikult käsitleme ja kui hoomatavad teemad on.
 
+Õpilase esitatud teemad[@adminkursus_01pdf]:
+
+1. Failisüsteemide haldamine
+
+2. Linuxi installeerimine
+
+3. Algkäivitusprotseduur
+
+4. Ülevaade vahenditest
+
+5. Tarkvara haldamine
+
+6. Protsesside ja mälu haldamine
+
+7. Failid, kataloogid, pääsuõigused
+
+8. Kest, töö käsureal
+
+9. Võrk
+
+10. Kasutajate haldamine
+
+11. Monitooring
+
+12. Varukoopiate tegemine
+
 ## Rakenduse avamine *Ubuntu*s
 
 "Rakendus" on teise sõnaga "programm". Programme on mitmeid. Sündmusel võib olla oma programm, mida nimetatakse ka kavaks. Nt kontserdikavas on esinemised kindlas järjekorras. Raadioprogramm tähendab raadiosaateid kindlas järjekorras ja kindlaksmääratud algusaja ja kestuse ja sisuga. Reisiprogramm tähendab eri kohtade külastamist teatud järjekorras ja teatud ajal. Arvutiprogramm tähendab kodeeritud juhiste jada, mille järgi masin toimetab.

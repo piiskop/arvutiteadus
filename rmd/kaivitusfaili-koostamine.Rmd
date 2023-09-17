@@ -26,8 +26,3 @@ Kaivitusfaili loomiseks vajalikud sammud  :
     
     
     ```
-
-
- 
-
->>>>>>> 474bddd9d66586043ef0ed98265ab1cd18fc74a4:rmd/mote.Rmd
