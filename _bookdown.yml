@@ -13,5 +13,6 @@ rmd_files: [
   "rmd/arvutigraafika.Rmd",
   "rmd/ubuntu/ubuntu.Rmd",
   "rmd/about.Rmd",
+  "rmd/openproject.Rmd",
   "references.Rmd"
 ]

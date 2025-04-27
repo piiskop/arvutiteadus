@@ -1,0 +1,33 @@
+# *OpenProject*
+
+
+
+```{sh eval=FALSE}
+kalmer@ons:/srv$ sudo mkdir -p openproject/{pgdata,assets}
+
+kalmer@ons:/srv/openproject/pgdata$ sudo tar xzf /1tb/backup/20250420000001/backup/attachments-20250420000012.tar.gz -C ../assets/files/
+kalmer@ons:/srv/openproject/pgdata$ sudo chown -R 102:102 /srv/openproject/assets/files/
+kalmer@ons:/srv/openproject/pgdata$ sudo mkdir -p /srv/openproject/assets/config
+kalmer@ons:/srv/openproject/pgdata$ sudo tar xzf /1tb/backup/20250420000001/backup/conf-20250420000012.tar.gz -C ../assets/config/
+kalmer@ons:/srv/openproject/pgdata$ sudo chown -R 102:102 /srv/openproject/assets/config/
+
+sudo chown 999:999 /srv/openproject/pgdata
+
+kalmer@ons:/srv/openproject$ sudo docker run --name temp-postgres -e POSTGRES_PASSWORD=openproject -e POSTGRES_USER=openproject -e POSTGRES_DB=openproject -v /srv/openproject/pgdata:/var/lib/postgresql/data -p 5433:5432 -d postgres:13
+34fdcf89c1a03021e34a6986752896addf96d7cecb3f0fc57ecf10664e99970b
+
+kalmer@ons:/1tb/backup/20250420000001/backup$ sudo chmod a+r /1tb/backup/20250420000001/backup/postgresql-dump-20250420000012.pgdump
+
+kalmer@ons:/srv/openproject$ export PGPASSWORD=openproject
+pg_restore -h localhost -p 5433 -U openproject -d openproject /1tb/backup/20250420000001/backup/postgresql-dump-20250420000012.pgdump
+
+kalmer@ons:/1tb/backup/20250420000001/backup$ head /dev/urandom | tr -dc A-Za-z0-9 | head -c 32 ; echo ''
+drv6fPMh4bnTzjNGrTxyI6jIAJ8OkueY
+
+kalmer@ons:/srv/openproject$ sudo docker run -d --name openproject   -p 4:80   -e SECRET_KEY_BASE=drv6fPMh4bnTzjNGrTxyI6jIAJ8OkueY   -e DATABASE_URL=postgresql://openproject:openproject@192.168.1.173:5433/openproject   -v /srv/openproject/assets:/var/openproject/assets   openproject/openproject:15
+519e60175da66af4b730c6ea17490f8c5d87717179afe3accd49f36008581a77
+
+kalmer@ons:/srv/openproject$ sudo docker update --restart unless-stopped openproject
+openproject
+
+```
